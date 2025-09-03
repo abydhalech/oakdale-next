@@ -11,13 +11,14 @@ export default function Layout({ children, seoProps = {} }) {
           <Link href="/" className="flex items-center gap-2">
             <Image src="/logo.png" alt="Oakdale Travel logo" width={150} height={40} priority />
           </Link>
-          <nav className="flex gap-5 text-sm">
+          <nav className="flex items-center gap-5 text-sm">
   <Link href="/" className="hover:underline">Home</Link>
   <Link href="/services" className="hover:underline">Services</Link>
   <Link href="/areas" className="hover:underline">Areas</Link>
   <Link href="/fleet" className="hover:underline">Fleet</Link>
   <Link href="/faq" className="hover:underline">FAQ</Link>
   <Link href="/contact" className="hover:underline">Contact</Link>
+  <Link href="/contact" className="button-primary text-xs">Get a Quote</Link>
           </nav>
         </div>
       </header>
