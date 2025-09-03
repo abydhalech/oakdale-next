@@ -32,9 +32,9 @@ export default function Home() {
   <h2 className="text-2xl font-semibold">Our fleet</h2>
   <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
     {[
-      '/fleet/ford-transit-2015-exterior-front.jpg',
-      '/fleet/ford-transit-2015-exterior-side.jpg',
-      '/fleet/ford-transit-2015-interior-seats.jpg'
+      '/fleet/ford-transit-2015-exterior-front.webp',
+      '/fleet/ford-transit-2015-exterior-side.webp',
+      '/fleet/ford-transit-2015-interior-seats.webp'
     ].map(src => (
       <div key={src} className="relative aspect-[4/3] border border-black/10 rounded-xl overflow-hidden">
         <img src={src} alt="Oakdale Travel Ford Transit 16-seater minibus" className="w-full h-full object-cover" loading="lazy" />
