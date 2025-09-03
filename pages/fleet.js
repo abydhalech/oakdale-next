@@ -20,8 +20,8 @@ export default function Fleet() {
       <div className="max-w-6xl mx-auto px-4 py-12 text-black">
         <h1 className="text-3xl font-semibold">Our fleet</h1>
         <p className="text-black/80 mt-3">
-          At Oakdale Travel, we operate a Ford Transit 16-seater minibus — spacious, comfortable and fully insured.
-        </p>
+  Our 2015 Ford Transit 16-seater minibus is spacious, reliable and fully insured. With comfortable seating, 3-point seat belts, and easy access, it’s the perfect choice for school transport, airport transfers, weddings, corporate events, sports teams and family trips across the North West.
+</p>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
           {images.map((img) => (
             <div key={img.src} className="relative aspect-[4/3] border border-black/10 rounded-xl overflow-hidden">
