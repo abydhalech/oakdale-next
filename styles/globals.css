@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next { height: 100%; }
+body { color: #000; background: #fff; -webkit-font-smoothing: antialiased; }
+
+a { text-decoration: none; color: inherit; }
+a:hover { text-decoration: underline; }
+
+.button-primary { background:#000; color:#fff; border-radius:12px; padding:12px 18px; }
+.button-ghost { background:transparent; color:#000; border:1px solid #000; border-radius:12px; padding:12px 18px; }
