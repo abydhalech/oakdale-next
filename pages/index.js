@@ -27,6 +27,21 @@ export default function Home() {
         <p className="mt-3 text-black/80">{GMB_DESC}</p>
 
         <section className="mt-12">
+  {/* Featured fleet images */}
+<section className="mt-12">
+  <h2 className="text-2xl font-semibold">Our fleet</h2>
+  <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+    {[
+      '/fleet/ford-transit-2015-exterior-front.jpg',
+      '/fleet/ford-transit-2015-exterior-side.jpg',
+      '/fleet/ford-transit-2015-interior-seats.jpg'
+    ].map(src => (
+      <div key={src} className="relative aspect-[4/3] border border-black/10 rounded-xl overflow-hidden">
+        <img src={src} alt="Oakdale Travel Ford Transit 16-seater minibus" className="w-full h-full object-cover" loading="lazy" />
+      </div>
+    ))}
+  </div>
+</section>
           <h2 className="text-2xl font-semibold">Areas we cover</h2>
           <p className="mt-3 text-black/80">Choose your local area to find out more about our services nearby:</p>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
