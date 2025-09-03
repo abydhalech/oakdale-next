@@ -12,11 +12,12 @@ export default function Layout({ children, seoProps = {} }) {
             <Image src="/logo.png" alt="Oakdale Travel logo" width={150} height={40} priority />
           </Link>
           <nav className="flex gap-5 text-sm">
-            <Link href="/services" className="hover:underline">Services</Link>
-            <Link href="/areas" className="hover:underline">Areas</Link>
-            <Link href="/fleet" className="hover:underline">Fleet</Link>
-            <Link href="/faq" className="hover:underline">FAQ</Link>
-            <Link href="/contact" className="hover:underline">Contact</Link>
+  <Link href="/" className="hover:underline">Home</Link>
+  <Link href="/services" className="hover:underline">Services</Link>
+  <Link href="/areas" className="hover:underline">Areas</Link>
+  <Link href="/fleet" className="hover:underline">Fleet</Link>
+  <Link href="/faq" className="hover:underline">FAQ</Link>
+  <Link href="/contact" className="hover:underline">Contact</Link>
           </nav>
         </div>
       </header>
