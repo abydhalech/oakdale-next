@@ -3,12 +3,12 @@ import { siteUrl } from '../components/utils';
 
 export default function Fleet() {
   const images = [
-    { src: '/fleet/ford-transit-2015-exterior-front.jpg', alt: 'Ford Transit 2015 minibus exterior front view' },
-    { src: '/fleet/ford-transit-2015-exterior-side.jpg',  alt: 'Ford Transit 2015 minibus side view' },
-    { src: '/fleet/ford-transit-2015-exterior-rear.jpg',  alt: 'Ford Transit 2015 minibus rear view' },
-    { src: '/fleet/ford-transit-2015-interior-seats.jpg', alt: '16-seater Ford Transit minibus interior seats with 3-point seat belts' },
-    { src: '/fleet/ford-transit-2015-interior-front.jpg', alt: 'Driver and front cabin of Ford Transit 2015 minibus' },
-    { src: '/fleet/ford-transit-2015-access-step.jpg',    alt: 'Ford Transit minibus side access step for easy boarding' }
+    { src: '/fleet/ford-transit-2015-exterior-front.webp', alt: 'Ford Transit 2015 minibus exterior front view' },
+    { src: '/fleet/ford-transit-2015-exterior-side.webp',  alt: 'Ford Transit 2015 minibus side view' },
+    { src: '/fleet/ford-transit-2015-exterior-rear.webp',  alt: 'Ford Transit 2015 minibus rear view' },
+    { src: '/fleet/ford-transit-2015-interior-seats.webp', alt: '16-seater Ford Transit minibus interior seats with 3-point seat belts' },
+    { src: '/fleet/ford-transit-2015-interior-front.webp', alt: 'Driver and front cabin of Ford Transit 2015 minibus' },
+    { src: '/fleet/ford-transit-2015-access-step.webp',    alt: 'Ford Transit minibus side access step for easy boarding' }
   ];
 
   return (
