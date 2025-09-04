@@ -1,8 +1,7 @@
+import Layout from '../components/Layout';
 import Reviews from '../components/Reviews';
 import MapBlock from '../components/MapBlock';
-import { phone, email } from '../components/utils';
-import Layout from '../components/Layout';
-import { AREAS, GMB_DESC, phone, siteUrl, gmbUrl } from '../components/utils';
+import { AREAS, GMB_DESC, phone, email, siteUrl, gmbUrl } from '../components/utils';
 
 const jsonLd = {
   '@context': 'https://schema.org',
