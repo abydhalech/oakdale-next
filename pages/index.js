@@ -14,6 +14,18 @@ const jsonLd = {
   logo: `${siteUrl}/logo.png`,
   sameAs: [gmbUrl],
   areaServed: AREAS
+
+  telephone: phone,
+email,
+address: {
+  "@type": "PostalAddress",
+  "streetAddress": "Cambrian Business Park",
+  "addressLocality": "Bolton",
+  "postalCode": "BL3 6JF",
+  "addressCountry": "GB"
+},
+hasMap: gmbUrl
+
 };
 
 export default function Home() {
