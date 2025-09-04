@@ -1,6 +1,7 @@
 import SEO from './SEO';
 import Link from 'next/link';
 import Image from 'next/image';
+import { phone } from './utils';
 
 export default function Layout({ children, seoProps = {} }) {
   return (
