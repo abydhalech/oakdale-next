@@ -4,94 +4,68 @@ import MapBlock from '../components/MapBlock';
 import { AREAS, GMB_DESC, phone, email, siteUrl, gmbUrl } from '../components/utils';
 
 const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Oakdale Travel',
-  url: siteUrl,
-  telephone: phone,
-  description: GMB_DESC,
-  openingHours: 'Mo-Su 06:00-22:00',
-  logo: `${siteUrl}/logo.png`,
-  sameAs: [gmbUrl],
-  areaServed: AREAS
-
-  telephone: phone,
-email,
-address: {
-  "@type": "PostalAddress",
-  "streetAddress": "Cambrian Business Park",
-  "addressLocality": "Bolton",
-  "postalCode": "BL3 6JF",
-  "addressCountry": "GB"
-},
-hasMap: gmbUrl
-
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": siteUrl,
+  "name": "Oakdale Travel",
+  "url": siteUrl,
+  "logo": `${siteUrl}/logo.png`,
+  "image": `${siteUrl}/og-image.webp`,
+  "description": GMB_DESC,
+  "telephone": phone,
+  "email": email,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Cambrian Business Park",
+    "addressLocality": "Bolton",
+    "postalCode": "BL3 6JF",
+    "addressCountry": "GB"
+  },
+  "hasMap": gmbUrl,
+  "sameAs": [gmbUrl],
+  "areaServed": AREAS,
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "6"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Adnan A" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "reviewBody": "Brilliant experience. Minibus was clean, comfortable, and driver was on time and friendly."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Lee Male" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "reviewBody": "Good value, good service. Will be booking again."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Ibrahim Dhalech" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "reviewBody": "Fantastic communication, professionalism 10/10."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Ayesha Athar" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "reviewBody": "Always punctual, very helpful with luggage, and friendly drivers."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Fatima A" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "reviewBody": "On time, very helpful with luggage, made the journey stress-free."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Zayed Amla" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "reviewBody": "Great service! Always on time, reliable and friendly drivers."
+    }
+  ]
 };
 
-export default function Home() {
-  return (
-    <Layout seoProps={{
-      title: 'Oakdale Travel — Minibus & coach hire Bolton, Wigan, Manchester',
-      description: '16-seater minibus and coach hire for schools, social care, airports, weddings, corporate and private events across Bolton, Wigan, Manchester and the North West.',
-      canonical: siteUrl,
-      jsonLd
-    }}>
-      <div className="max-w-6xl mx-auto px-4 py-12 text-black">
-        <h1 className="text-3xl md:text-4xl font-semibold">Reliable minibus & coach hire in the North West</h1>
-        <div className="mt-6 flex gap-3">
-  <a className="button-primary" href="/contact">Get a quote</a>
-  <a className="button-ghost" href={`tel:${phone}`}>Call {phone}</a>
-  <a className="button-ghost" href={`mailto:${email}`}>Email us</a>
-</div>
-        <p className="mt-3 text-black/80">{GMB_DESC}</p>
-
-        <section className="mt-12">
-  {/* Featured fleet images */}
-<section className="mt-12">
-  <h2 className="text-2xl font-semibold">Our fleet</h2>
-  <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
-    {[
-      '/fleet/ford-transit-2015-exterior-front.webp',
-      '/fleet/ford-transit-2015-exterior-side.webp',
-      '/fleet/ford-transit-2015-interior-seats.webp'
-    ].map(src => (
-      <div key={src} className="relative aspect-[4/3] border border-black/10 rounded-xl overflow-hidden">
-        <img src={src} alt="Oakdale Travel Ford Transit 16-seater minibus" className="w-full h-full object-cover" loading="lazy" />
-      </div>
-    ))}
-  </div>
-</section>
-          <h2 className="text-2xl font-semibold">Areas we cover</h2>
-          <p className="mt-3 text-black/80">Choose your local area to find out more about our services nearby:</p>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
-            {AREAS.map(town => (
-              <div key={town}>
-                <a href={`/areas/${town.toLowerCase().replace(/\s+/g,'-')}`} className="underline font-medium">
-                  Minibus & coach hire in {town}
-                </a>
-                <p className="text-black/70 text-sm mt-1">
-                  {town === 'Bolton' && 'Serving Bolton School, Toughsheet Stadium and regular transfers to Manchester Airport.'}
-                  {town === 'Wigan' && 'Covering Wigan & Leigh College, DW Stadium and transfers to Manchester & Liverpool airports.'}
-                  {town === 'Manchester' && 'City centre venues, universities, Old Trafford, Etihad and Manchester Airport connections.'}
-                  {town === 'Leigh' && 'Group travel to Leigh Sports Village, local schools and reliable airport shuttles.'}
-                  {town === 'Bury' && 'Trips to Bury Market, local schools and frequent Manchester Airport transfers.'}
-                  {town === 'Salford' && 'Covering MediaCityUK, University of Salford and Salford Quays events.'}
-                  {town === 'Rochdale' && 'School contracts, Hollingworth Lake trips and Manchester Airport transfers.'}
-                  {town === 'Warrington' && 'Transport for Gulliver’s World, Halliwell Jones Stadium and business centres.'}
-                  {town === 'Preston' && 'Serving UCLan, Deepdale Stadium and reliable airport & event transfers.'}
-                  {town === 'Liverpool' && 'Covering Anfield, Goodison Park, universities and stag/hen party transport.'}
-                  {town === 'St Helens' && 'Trips to Totally Wicked Stadium, schools and social care travel across Merseyside.'}
-                  {town === 'Stockport' && 'Edgeley Park, Stockport Grammar and frequent Manchester Airport transfers.'}
-                  {town === 'Oldham' && 'Oldham Athletic match-day hire, school runs and family event transport.'}
-                  {town === 'Blackburn' && 'Blackburn Rovers games, local schools and regular airport journeys.'}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
-              <Reviews />
-              <MapBlock />
-      </div>
-    </Layout>
-  );
-}
