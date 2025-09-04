@@ -14,7 +14,7 @@ export default function Layout({ children, seoProps = {} }) {
           </Link>
           <nav className="flex items-center gap-5 text-sm">
 
-/* …inside the nav… */
+
   <Link href={`tel:${phone}`} className="button-primary text-xs">Call {phone}</Link>
 
   <Link href="/" className="hover:underline">Home</Link>
