@@ -20,7 +20,8 @@ export const SERVICES = [
 
 export const GMB_DESC = `Oakdale Travel provides reliable minibus and coach hire across Bolton, Wigan, Manchester, Leigh, Bury, Salford, Rochdale, Warrington, Liverpool, Preston and the wider North West. We specialise in safe, comfortable, and punctual transport for all occasions including school runs, airport transfers, race courses, weddings, family events, corporate travel, day trips, sports teams, and adult social care. Our modern fleet of 16-seater minibuses and larger coaches is fully insured, well maintained, and driven by experienced, DBS-checked drivers. With flexible, professional, and competitively priced services, Oakdale Travel is the trusted choice for private hire and contract transport. Get in contact with us today.`;
 
-export const phone = '01204 000 000';
-export const email = 'hello@oakdaletravel.co.uk';
+export const phone = '07758703691';
+export const email = 'info@oakdaletravel.co.uk';
+export const address = 'Cambrian Business Park, Bolton BL3 6JF';
 export const siteUrl = 'https://oakdaletravel.co.uk';
 export const gmbUrl = 'https://maps.app.goo.gl/zZgCfUuqJ4UVChF78';
