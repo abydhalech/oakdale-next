@@ -27,6 +27,11 @@ export default function Home() {
     }}>
       <div className="max-w-6xl mx-auto px-4 py-12 text-black">
         <h1 className="text-3xl md:text-4xl font-semibold">Reliable minibus & coach hire in the North West</h1>
+        <div className="mt-6 flex gap-3">
+  <a className="button-primary" href="/contact">Get a quote</a>
+  <a className="button-ghost" href={`tel:${phone}`}>Call {phone}</a>
+  <a className="button-ghost" href={`mailto:${email}`}>Email us</a>
+</div>
         <p className="mt-3 text-black/80">{GMB_DESC}</p>
 
         <section className="mt-12">
@@ -73,6 +78,8 @@ export default function Home() {
             ))}
           </div>
         </section>
+              <Reviews />
+              <MapBlock />
       </div>
     </Layout>
   );
