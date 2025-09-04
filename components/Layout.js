@@ -2,6 +2,8 @@ import SEO from './SEO';
 import Link from 'next/link';
 import Image from 'next/image';
 import { phone } from './utils';
+import { phone, email, address, gmbUrl, siteUrl } from './utils';
+
 
 export default function Layout({ children, seoProps = {} }) {
   return (
@@ -27,12 +29,60 @@ export default function Layout({ children, seoProps = {} }) {
           </nav>
         </div>
       </header>
-      <main>{children}</main>
-      <footer className="bg-black text-white py-10 mt-12 text-sm">
-        <div className="max-w-6xl mx-auto px-4">
-          <p>© {new Date().getFullYear()} Oakdale Travel — minibus & coach hire across Bolton, Wigan, Manchester and the North West.</p>
-        </div>
-      </footer>
+              <main>{children}</main>
+              <footer className="bg-black text-white py-10 mt-12 text-sm">
+          <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+            {/* Brand + brief */}
+            <div>
+              <div className="text-lg font-semibold">Oakdale Travel</div>
+              <p className="mt-2 text-white/80">
+                Reliable 16-seater minibus hire for schools, airport transfers, events and contracts across Greater Manchester & the North West.
+              </p>
+              <p className="mt-3 text-white/60">
+                © {new Date().getFullYear()} Oakdale Travel
+              </p>
+            </div>
+        
+            {/* Contact (NAP) */}
+            <div>
+              <div className="font-semibold">Contact</div>
+              <ul className="mt-3 space-y-2">
+                <li>
+                  <span className="text-white/70">Phone:</span>{' '}
+                  <a className="underline" href={`tel:${phone}`}>{phone}</a>
+                </li>
+                <li>
+                  <span className="text-white/70">Email:</span>{' '}
+                  <a className="underline" href={`mailto:${email}`}>{email}</a>
+                </li>
+                <li>
+                  <span className="text-white/70">Address:</span>{' '}
+                  <span>{address}</span>
+                </li>
+                <li>
+                  <a className="underline" href={gmbUrl} target="_blank" rel="noreferrer">
+                    View on Google Maps
+                  </a>
+                </li>
+              </ul>
+            </div>
+        
+            {/* Quick links */}
+            <div>
+              <div className="font-semibold">Quick links</div>
+              <ul className="mt-3 space-y-2">
+                <li><a className="underline" href="/">Home</a></li>
+                <li><a className="underline" href="/services">Services</a></li>
+                <li><a className="underline" href="/areas">Areas we cover</a></li>
+                <li><a className="underline" href="/fleet">Fleet</a></li>
+                <li><a className="underline" href="/faq">FAQ</a></li>
+                <li><a className="underline" href="/contact">Contact</a></li>
+                <li><a className="underline" href={`${siteUrl}/sitemap.xml`}>Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+
     </>
   );
 }
