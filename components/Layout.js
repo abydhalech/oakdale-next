@@ -1,7 +1,6 @@
 import SEO from './SEO';
 import Link from 'next/link';
 import Image from 'next/image';
-import { phone } from './utils';
 import { phone, email, address, gmbUrl, siteUrl } from './utils';
 
 
