@@ -12,6 +12,10 @@ export default function Layout({ children, seoProps = {} }) {
             <Image src="/logo.png" alt="Oakdale Travel logo" width={150} height={40} priority />
           </Link>
           <nav className="flex items-center gap-5 text-sm">
+    import { phone } from './utils';
+/* …inside the nav… */
+  <Link href={`tel:${phone}`} className="button-primary text-xs">Call {phone}</Link>
+
   <Link href="/" className="hover:underline">Home</Link>
   <Link href="/services" className="hover:underline">Services</Link>
   <Link href="/areas" className="hover:underline">Areas</Link>
