@@ -1,46 +1,39 @@
+// components/SEO.js
 import Head from 'next/head';
+import { siteUrl } from './utils';
 
-export default function SEO({
-  title,
-  description,
-  url = 'https://oakdaletravel.co.uk',
-  image = '/og-image.webp',
-  canonical,
-  jsonLd,
-  noindex = false,
-  hreflang = 'en-GB'
-}) {
-  const pageUrl = canonical || url;
+export default function SEO({ title, description, canonical, jsonLd }) {
+  // ✅ Safe defaults used if a page doesn't pass seoProps
+  const t =
+    title ||
+    'Oakdale Travel — Minibus & coach hire Bolton, Wigan, Manchester';
+  const d =
+    description ||
+    'Reliable 16-seater minibus hire across Bolton, Wigan, Manchester, Liverpool and the North West. School transport, airport transfers, weddings, corporate travel and contracts.';
+  const c = canonical || siteUrl;
+
   return (
     <Head>
-      <title>{title}</title>
-      <meta charSet="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="description" content={description} />
-      <meta name="robots" content={noindex ? 'noindex,follow' : 'index,follow'} />
-      <link rel="canonical" href={pageUrl} />
-      <link rel="alternate" hrefLang={hreflang} href={pageUrl} />
+      {/* Required for accessibility & SEO */}
+      <title>{t}</title>
+      <meta name="description" content={d} />
+      <link rel="canonical" href={c} />
 
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={pageUrl} />
-      <meta property="og:image" content={image} />
-      <meta property="og:locale" content="en_GB" />
-
+      {/* Social share basics */}
+      <meta property="og:title" content={t} />
+      <meta property="og:description" content={d} />
+      <meta property="og:url" content={c} />
+      <meta property="og:image" content={`${siteUrl}/og-image.webp`} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} />
 
-      <link rel="icon" href="/favicon.ico" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-      <link rel="manifest" href="/site.webmanifest" />
-
-
-      {jsonLd && (<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />)}
+      {/* Optional structured data */}
+      {jsonLd && (
+        <script
+          type="application/ld+json"
+          // Important: stringify to valid JSON, not JS objects
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      )}
     </Head>
   );
 }
