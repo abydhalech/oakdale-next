@@ -62,6 +62,9 @@ export default function Home() {
           Our DBS-checked drivers and modern minibuses ensure safe, punctual and comfortable travel.
         </p>
 
+        <QuickQuote />
+
+
         {/* Areas */}
         <section className="mt-12">
           <h2 className="text-2xl font-semibold">Areas we cover</h2>
