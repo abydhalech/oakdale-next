@@ -45,19 +45,23 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        <title>Oakdale Travel — Minibus & coach hire Bolton, Wigan, Manchester</title>
+        <meta
+          name="description"
+          content="Reliable 16-seater minibus hire in Bolton, Wigan, Manchester, Liverpool and across the North West. School transport, airport transfers, weddings, corporate travel and contracts."
         />
+        <link rel="canonical" href={siteUrl} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </Head>
 
       <div className="max-w-6xl mx-auto px-4 py-12 text-black">
         <h1 className="text-3xl font-semibold">Reliable minibus & coach hire in the North West</h1>
         <p className="mt-3">
-          We provide transport across Bolton, Wigan, Manchester and beyond. 
+          We provide transport across Bolton, Wigan, Manchester and beyond.
           Our DBS-checked drivers and modern minibuses ensure safe, punctual and comfortable travel.
         </p>
 
+        {/* Areas */}
         <section className="mt-12">
           <h2 className="text-2xl font-semibold">Areas we cover</h2>
           <p className="mt-3 text-black/80">Choose your local area to find out more about our services nearby:</p>
