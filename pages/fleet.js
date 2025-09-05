@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Layout from '../components/Layout';
 import { siteUrl } from '../components/utils';
 
@@ -25,8 +26,15 @@ export default function Fleet() {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
           {images.map((img) => (
             <div key={img.src} className="relative aspect-[4/3] border border-black/10 rounded-xl overflow-hidden">
-              <img src={img.src} alt={img.alt} className="w-full h-full object-cover" loading="lazy" />
-            </div>
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+
           ))}
         </div>
         <div className="mt-10">
