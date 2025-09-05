@@ -1,3 +1,4 @@
+import QuickQuote from '../components/QuickQuote';
 import Head from 'next/head';
 import Layout from '../components/Layout';
 import Reviews from '../components/Reviews';
