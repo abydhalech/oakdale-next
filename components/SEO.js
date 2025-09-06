@@ -14,6 +14,9 @@ export default function SEO({ title, description, canonical, jsonLd }) {
 
   return (
     <Head>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
       {/* Required for accessibility & SEO */}
       <title>{t}</title>
       <meta name="description" content={d} />
