@@ -34,7 +34,7 @@ export default function BoltonAreaPage() {
 
   return (
     <Layout seoProps={{ title, description, canonical, jsonLd }}>
-      <main className="max-w-6xl mx-auto px-5 py-10 md:py-14">
+      <div className="max-w-6xl mx-auto px-5 py-10 md:py-14">
 
         <nav
           aria-label="Breadcrumb"
@@ -450,7 +450,7 @@ export default function BoltonAreaPage() {
           </div>
         </section>
 
-      </main>
+      </div>
     </Layout>
   );
 }
