@@ -150,6 +150,87 @@ export default function BoltonAreaPage() {
 
   </div>
 </section>
+          <section className="mt-12">
+  <div className="flex flex-wrap items-end justify-between gap-4">
+    <div>
+      <h2 className="text-2xl md:text-3xl font-bold">
+        What Our Customers Say
+      </h2>
+      <p className="mt-2 text-gray-700">
+        Genuine feedback from customers who have travelled with Oakdale Travel.
+      </p>
+    </div>
+
+    <a
+      href={gmbUrl}
+      target="_blank"
+      rel="noreferrer"
+      className="underline font-semibold"
+    >
+      Read all Google reviews
+    </a>
+  </div>
+
+  <div className="mt-8 grid gap-6 md:grid-cols-3">
+
+    <article className="border border-gray-200 rounded-lg p-6">
+      <div
+        className="text-lg font-semibold"
+        aria-label="5 out of 5 stars"
+      >
+        ★★★★★
+      </div>
+
+      <blockquote className="mt-4 leading-7 text-gray-700">
+        “Fantastic service all inc. trip to Haydock races for music event and
+        evening races. Abdullah is a lovely guy and communication was
+        brilliant. Top guy, professional friendly service. 100% recommend to
+        anyone.”
+      </blockquote>
+
+      <p className="mt-4 font-semibold">Angela Kelsall</p>
+      <p className="text-sm text-gray-600">Google review</p>
+    </article>
+
+    <article className="border border-gray-200 rounded-lg p-6">
+      <div
+        className="text-lg font-semibold"
+        aria-label="5 out of 5 stars"
+      >
+        ★★★★★
+      </div>
+
+      <blockquote className="mt-4 leading-7 text-gray-700">
+        “Ordered for a return service to the grand final at Old Trafford.
+        The driver was amazing and didn’t mind waiting for our friend who was
+        running late. Great communication as to where he would pick us up,
+        bus was very spacious and spotless.”
+      </blockquote>
+
+      <p className="mt-4 font-semibold">Danielle Molloy</p>
+      <p className="text-sm text-gray-600">Google review</p>
+    </article>
+
+    <article className="border border-gray-200 rounded-lg p-6">
+      <div
+        className="text-lg font-semibold"
+        aria-label="5 out of 5 stars"
+      >
+        ★★★★★
+      </div>
+
+      <blockquote className="mt-4 leading-7 text-gray-700">
+        “Excellent service, our driver Abdullah was very punctual and
+        friendly. Will definitely be using their services again, whole
+        process was very smooth and easy.”
+      </blockquote>
+
+      <p className="mt-4 font-semibold">Freya Cameron</p>
+      <p className="text-sm text-gray-600">Google review</p>
+    </article>
+
+  </div>
+</section>
         </section>
 
         <section className="mt-14">
