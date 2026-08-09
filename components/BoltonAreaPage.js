@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Layout from './Layout';
 import { siteUrl } from './utils';
 
@@ -88,6 +89,23 @@ export default function BoltonAreaPage() {
               View 16-Seater Minibus Hire
             </Link>
           </div>
+                <div className="mt-10">
+  <div className="relative w-full aspect-[16/9] overflow-hidden rounded-lg">
+    <Image
+      src="/fleet/ford-transit-2015-exterior-front.webp"
+      alt="Oakdale Travel 16-seater Ford Transit minibus for hire in Bolton"
+      fill
+      priority
+      sizes="(max-width: 768px) 100vw, 900px"
+      className="object-cover"
+    />
+  </div>
+
+  <p className="mt-3 text-sm text-gray-600">
+    One of Oakdale Travel&apos;s minibuses used for group transport, school
+    journeys, airport transfers and private hire.
+  </p>
+</div>
         </section>
 
         <section className="mt-14">
