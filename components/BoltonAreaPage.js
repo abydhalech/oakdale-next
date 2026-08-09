@@ -134,19 +134,12 @@ export default function BoltonAreaPage() {
     </div>
 
     <div>
-      <h2 className="text-lg font-bold">Customer Reviews</h2>
-      <p className="mt-2 text-gray-700">
-        See what customers say about travelling with Oakdale Travel.
-      </p>
-      <a
-        href={gmbUrl}
-        target="_blank"
-        rel="noreferrer"
-        className="inline-block mt-3 underline font-semibold"
-      >
-        Read our Google reviews
-      </a>
-    </div>
+  <h2 className="text-lg font-bold">Private &amp; Contract Hire</h2>
+  <p className="mt-2 text-gray-700">
+    Transport for airport journeys, events, schools, organisations and
+    regular contract requirements.
+  </p>
+</div>
 
   </div>
 </section>
