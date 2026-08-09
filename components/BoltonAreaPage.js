@@ -89,7 +89,7 @@ export default function BoltonAreaPage() {
               View 16-Seater Minibus Hire
             </Link>
           </div>
-                <div className="mt-10">
+                <div className="mt-10 max-w-3xl">
   <div className="relative w-full aspect-[16/9] overflow-hidden rounded-lg">
     <Image
       src="/fleet/ford-transit-2015-exterior-front.webp"
