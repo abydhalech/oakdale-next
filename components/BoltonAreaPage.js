@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Layout from './Layout';
-import { siteUrl } from './utils';
+import { siteUrl, gmbUrl } from './utils';
 
 export default function BoltonAreaPage() {
   const canonical = `${siteUrl}/areas/bolton`;
@@ -21,7 +21,7 @@ export default function BoltonAreaPage() {
       serviceType: 'Minibus hire with driver',
       url: canonical,
       provider: {
-        '@type': 'Organization',
+        '@type': 'Organisation',
         name: 'Oakdale Travel',
         url: siteUrl,
       },
@@ -106,6 +106,50 @@ export default function BoltonAreaPage() {
     journeys, airport transfers and private hire.
   </p>
 </div>
+      <section className="mt-10 border-y border-gray-200 py-8">
+  <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+    <div>
+      <h2 className="text-lg font-bold">Bolton-Based Operator</h2>
+      <p className="mt-2 text-gray-700">
+        Based in Bolton and providing minibus transport across the borough,
+        Greater Manchester and the North West.
+      </p>
+    </div>
+
+    <div>
+      <h2 className="text-lg font-bold">16-Seater With Driver</h2>
+      <p className="mt-2 text-gray-700">
+        Group minibus hire with a professional driver for private,
+        airport, school and contract journeys.
+      </p>
+    </div>
+
+    <div>
+      <h2 className="text-lg font-bold">School &amp; Contract Experience</h2>
+      <p className="mt-2 text-gray-700">
+        Experience providing regular transport for schools, councils
+        and organisations, with DBS-checked drivers where required.
+      </p>
+    </div>
+
+    <div>
+      <h2 className="text-lg font-bold">Customer Reviews</h2>
+      <p className="mt-2 text-gray-700">
+        See what customers say about travelling with Oakdale Travel.
+      </p>
+      <a
+        href={gmbUrl}
+        target="_blank"
+        rel="noreferrer"
+        className="inline-block mt-3 underline font-semibold"
+      >
+        Read our Google reviews
+      </a>
+    </div>
+
+  </div>
+</section>
         </section>
 
         <section className="mt-14">
