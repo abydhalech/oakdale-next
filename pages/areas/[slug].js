@@ -37,7 +37,7 @@ export default function AreaPage({ area }) {
   }
 
   if (area === 'Wigan') {
-    return <WiganAreaPage />;
+  return <WiganAreaPage />;
   }
 
   const slug = toSlug(area);
