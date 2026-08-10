@@ -1,4 +1,5 @@
 import Layout from '../../components/Layout';
+import BoltonAreaPage from '../../components/BoltonAreaPage';
 import { AREAS, siteUrl } from '../../components/utils';
 
 const toSlug = s => s.toLowerCase().replace(/\s+/g,'-');
@@ -30,6 +31,10 @@ export async function getStaticProps({ params }) {
 }
 
 export default function AreaPage({ area }) {
+  if (area === 'Bolton') {
+    return <BoltonAreaPage />;
+  }
+
   const slug = toSlug(area);
   const title = `Minibus & coach hire in ${area} — Oakdale Travel`;
   const description = `Reliable 16‑seater minibus and small coach hire in ${area} for school runs, airport transfers, weddings, corporate events and adult social care.`;
