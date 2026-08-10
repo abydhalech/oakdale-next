@@ -1,5 +1,6 @@
 import Layout from '../../components/Layout';
 import BoltonAreaPage from '../../components/BoltonAreaPage';
+import WiganAreaPage from '../../components/WiganAreaPage';
 import { AREAS, siteUrl } from '../../components/utils';
 
 const toSlug = s => s.toLowerCase().replace(/\s+/g,'-');
@@ -33,6 +34,10 @@ export async function getStaticProps({ params }) {
 export default function AreaPage({ area }) {
   if (area === 'Bolton') {
     return <BoltonAreaPage />;
+  }
+
+  if (area === 'Wigan') {
+    return <WiganAreaPage />;
   }
 
   const slug = toSlug(area);
