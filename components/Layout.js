@@ -21,7 +21,7 @@ export default function Layout({ children, seoProps = {} }) {
   width={150}
   height={40}
   priority
-  className="w-[120px] h-10 object-contain md:w-[150px]"
+  className="w-[120px] h-10 object-contain md:w-[150px] md:h-12"
 />
     </Link>
 
