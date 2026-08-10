@@ -1,5 +1,6 @@
 import Layout from '../../components/Layout';
 import SixteenSeaterServicePage from '../../components/SixteenSeaterServicePage';
+import MinibusWithDriverPage from '../../components/MinibusWithDriverPage';
 import { SERVICES, siteUrl } from '../../components/utils';
 
 const toSlug = s => s.toLowerCase().replace(/\s+/g,'-').replace(/\(|\)/g,'');
@@ -10,6 +11,10 @@ export async function getStaticProps({ params }) { return { props: { service: SE
 export default function ServicePage({ service }) {
   if (service === 'Minibus Hire (16-Seater)') {
     return <SixteenSeaterServicePage />;
+  }
+
+  if (service === 'Minibus with Driver Hire') {
+    return <MinibusWithDriverPage />;
   }
 
   const title = `${service} — Oakdale Travel`;
