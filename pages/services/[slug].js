@@ -1,4 +1,5 @@
 import Layout from '../../components/Layout';
+import SixteenSeaterServicePage from '../../components/SixteenSeaterServicePage';
 import { SERVICES, siteUrl } from '../../components/utils';
 
 const toSlug = s => s.toLowerCase().replace(/\s+/g,'-').replace(/\(|\)/g,'');
@@ -7,6 +8,10 @@ export async function getStaticPaths() { return { paths: SERVICES.map(s => ({ pa
 export async function getStaticProps({ params }) { return { props: { service: SERVICES.find(s => toSlug(s) === params.slug) } }; }
 
 export default function ServicePage({ service }) {
+  if (service === 'Minibus Hire (16-Seater)') {
+    return <SixteenSeaterServicePage />;
+  }
+
   const title = `${service} — Oakdale Travel`;
   const description = `${service} across Bolton, Wigan, Manchester and the North West. Reliable, DBS‑checked drivers and modern vehicles.`;
   const canonical = `${siteUrl}/services/${toSlug(service)}`;
