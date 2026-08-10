@@ -260,16 +260,16 @@ export default function SixteenSeaterServicePage() {
             Travel.
           </p>
 
-          <div className="mt-8 max-w-3xl">
-            <Image
-              src="/fleet/ford-transit-2015-interior-seats.webp"
-              alt="Interior seating of Oakdale Travel 16-seater minibus"
-              width={1200}
-              height={675}
-              sizes="(max-width: 768px) 100vw, 768px"
-              className="w-full h-auto rounded-lg"
-            />
-          </div>
+          <div className="mt-8">
+  <Image
+    src="/fleet/ford-transit-2015-interior-seats.webp"
+    alt="Interior seating of Oakdale Travel 16-seater minibus"
+    width={1200}
+    height={1600}
+    sizes="(max-width: 768px) 280px, 650px"
+    className="w-[280px] sm:w-[380px] md:w-[650px] h-auto rounded-lg"
+  />
+</div>
         </section>
 
         <section className="mt-14">
