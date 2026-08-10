@@ -16,13 +16,13 @@ export default function Layout({ children, seoProps = {} }) {
     
     <Link href="/" className="flex items-center gap-2 flex-shrink-0">
       <Image
-        src="/logo.png"
-        alt="Oakdale Travel logo"
-        width={150}
-        height={40}
-        priority
-        className="w-[120px] md:w-[150px] h-auto"
-      />
+  src="/logo.png"
+  alt="Oakdale Travel logo"
+  width={150}
+  height={40}
+  priority
+  className="w-[120px] h-10 object-contain md:w-[150px]"
+/>
     </Link>
 
     {/* Desktop navigation */}
