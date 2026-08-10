@@ -13,24 +13,48 @@ export default function BoltonAreaPage() {
     'Reliable minibus hire in Bolton with a driver. 16-seater transport for airport transfers, schools, weddings, events and contracts. Get a fast quote.';
 
   const jsonLd = [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'Service',
-      '@id': `${canonical}#minibus-hire`,
-      name: 'Minibus Hire Bolton',
-      serviceType: 'Minibus hire with driver',
-      url: canonical,
-      provider: {
-        '@type': 'Organisation',
-        name: 'Oakdale Travel',
-        url: siteUrl,
-      },
-      areaServed: {
-        '@type': 'City',
-        name: 'Bolton',
-      },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `${canonical}#minibus-hire`,
+    name: 'Minibus Hire Bolton',
+    serviceType: 'Minibus hire with driver',
+    url: canonical,
+    provider: {
+      '@type': 'Organization',
+      name: 'Oakdale Travel',
+      url: siteUrl,
     },
-  ];
+    areaServed: {
+      '@type': 'City',
+      name: 'Bolton',
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: siteUrl,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Areas',
+        item: `${siteUrl}/areas`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: 'Bolton',
+        item: canonical,
+      },
+    ],
+  },
+];
 
   return (
     <Layout seoProps={{ title, description, canonical, jsonLd }}>
