@@ -1,6 +1,7 @@
 import Layout from '../../components/Layout';
 import SixteenSeaterServicePage from '../../components/SixteenSeaterServicePage';
 import MinibusWithDriverPage from '../../components/MinibusWithDriverPage';
+import AirportTransfersPage from '../../components/AirportTransfersPage';
 import { SERVICES, siteUrl } from '../../components/utils';
 
 const toSlug = s => s.toLowerCase().replace(/\s+/g,'-').replace(/\(|\)/g,'');
@@ -15,6 +16,10 @@ export default function ServicePage({ service }) {
 
   if (service === 'Minibus with Driver Hire') {
     return <MinibusWithDriverPage />;
+  }
+
+  if (service === 'Airport Transfers (Manchester, Liverpool, Leeds Bradford)') {
+    return <AirportTransfersPage />;
   }
 
   const title = `${service} — Oakdale Travel`;
