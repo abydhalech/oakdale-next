@@ -1,6 +1,7 @@
 import Layout from '../../components/Layout';
 import BoltonAreaPage from '../../components/BoltonAreaPage';
 import WiganAreaPage from '../../components/WiganAreaPage';
+import ManchesterAreaPage from '../../components/ManchesterAreaPage';
 import { AREAS, siteUrl } from '../../components/utils';
 
 const toSlug = s => s.toLowerCase().replace(/\s+/g,'-');
@@ -37,7 +38,11 @@ export default function AreaPage({ area }) {
   }
 
   if (area === 'Wigan') {
-  return <WiganAreaPage />;
+    return <WiganAreaPage />;
+  }
+
+  if (area === 'Manchester') {
+    return <ManchesterAreaPage />;
   }
 
   const slug = toSlug(area);
