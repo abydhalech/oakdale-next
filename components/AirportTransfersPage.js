@@ -333,7 +333,25 @@ export default function AirportTransfersPage() {
             collections can be arranged from homes, hotels, workplaces and
             other agreed pickup locations.
           </p>
+<div className="mt-6 max-w-3xl border border-gray-200 rounded-lg p-6">
+  <h3 className="text-xl font-semibold">
+    Travelling From Bolton to Manchester Airport?
+  </h3>
 
+  <p className="mt-3 leading-7 text-gray-700">
+    We provide dedicated group minibus transfers from Bolton to
+    Manchester Airport, with a driver and return journeys available.
+  </p>
+
+  <p className="mt-4">
+    <Link
+      href="/airport-transfers/bolton-to-manchester-airport"
+      className="underline font-semibold"
+    >
+      Bolton to Manchester Airport Minibus
+    </Link>
+  </p>
+</div>
           <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3">
             <Link
               href="/areas/bolton"
