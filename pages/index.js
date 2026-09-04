@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import QuickQuote from '../components/QuickQuote';
-import Head from 'next/head';
 import Layout from '../components/Layout';
 import Reviews from '../components/Reviews';
 import MapBlock from '../components/MapBlock';
@@ -31,6 +30,12 @@ const jsonLd = {
 };
 
 export default function Home() {
+  const title =
+    '16-Seater Minibus Hire Bolton, Wigan & Manchester | Oakdale Travel';
+
+  const description =
+    '16-seater minibus hire with a driver across Bolton, Wigan, Manchester and the North West. Airport transfers, schools, events, weddings and group travel.';
+
   const towns = [
     'Bolton',
     'Wigan',
@@ -49,25 +54,14 @@ export default function Home() {
   ];
 
   return (
-    <Layout>
-      <Head>
-        <title>
-          16-Seater Minibus Hire Bolton, Wigan & Manchester | Oakdale Travel
-        </title>
-
-        <meta
-          name="description"
-          content="16-seater minibus hire with a driver across Bolton, Wigan, Manchester and the North West. Airport transfers, schools, events, weddings and group travel."
-        />
-
-        <link rel="canonical" href={siteUrl} />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </Head>
-
+    <Layout
+      seoProps={{
+        title,
+        description,
+        canonical: siteUrl,
+        jsonLd,
+      }}
+    >
       <div className="max-w-6xl mx-auto px-4 py-12 text-black">
 
         <section className="max-w-4xl">
@@ -277,23 +271,31 @@ export default function Home() {
           </h2>
 
           <p className="mt-3 max-w-4xl leading-7 text-black/80">
-            Bolton is our home base, with regular transport provided across
-            Greater Manchester and the wider North West. Our strongest local
-            service areas include Bolton, Wigan and Manchester, with group
-            transport available for both local journeys and longer-distance
-            UK travel.
+            Bolton is our home base, with transport provided across Greater
+            Manchester and the wider North West. Our key local service areas
+            include Bolton, Wigan and Manchester, with group transport
+            available for local journeys and longer-distance UK travel.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3">
-            <Link href="/areas/bolton" className="underline font-semibold">
+            <Link
+              href="/areas/bolton"
+              className="underline font-semibold"
+            >
               Minibus Hire Bolton
             </Link>
 
-            <Link href="/areas/wigan" className="underline font-semibold">
+            <Link
+              href="/areas/wigan"
+              className="underline font-semibold"
+            >
               Minibus Hire Wigan
             </Link>
 
-            <Link href="/areas/manchester" className="underline font-semibold">
+            <Link
+              href="/areas/manchester"
+              className="underline font-semibold"
+            >
               Minibus Hire Manchester
             </Link>
           </div>
