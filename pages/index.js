@@ -77,8 +77,8 @@ export default function Home() {
 
           <p className="mt-4 leading-7 text-black/80">
             We provide transport for airport transfers, weddings, sporting
-            events, concerts, school journeys, contract transport, family
-            occasions and group travel across the UK.
+            events, race days, concerts, school journeys, contract transport,
+            family occasions and group travel across the UK.
           </p>
 
           <div className="mt-7 flex flex-wrap gap-3">
@@ -102,18 +102,18 @@ export default function Home() {
 
         <section className="mt-14">
           <h2 className="text-2xl md:text-3xl font-semibold">
-            Minibus Hire for Airports, Events, Schools & Groups
+            Minibus Hire for Private Groups, Events & Travel
           </h2>
 
           <p className="mt-3 max-w-4xl leading-7 text-black/80">
-            Our driver-operated minibus service is suitable for private and
-            contract journeys. Whether you need transport to Manchester
-            Airport, a wedding, football match, concert, school or another UK
+            Our driver-operated minibus service is available for private and
+            contract journeys. Whether you need transport for a wedding,
+            race day, concert, sporting event, airport, school or another UK
             destination, we can provide a quotation based on your journey
             requirements.
           </p>
 
-          <div className="mt-7 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-7 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
             <div className="border border-gray-200 rounded-lg p-5">
               <h3 className="text-lg font-semibold">
@@ -150,6 +150,46 @@ export default function Home() {
                   className="underline font-medium"
                 >
                   Minibus hire with driver
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-lg font-semibold">
+                Wedding Minibus Hire
+              </h3>
+
+              <p className="mt-2 text-black/70">
+                Guest transport for wedding venues, hotels, receptions and
+                return journeys.
+              </p>
+
+              <p className="mt-3">
+                <Link
+                  href="/services/wedding-transport-hire"
+                  className="underline font-medium"
+                >
+                  View wedding minibus hire
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-lg font-semibold">
+                Race Day Minibus Hire
+              </h3>
+
+              <p className="mt-2 text-black/70">
+                Group transport to Haydock, Aintree, York, Chester and other
+                UK racecourses.
+              </p>
+
+              <p className="mt-3">
+                <Link
+                  href="/services/race-day-minibus-hire"
+                  className="underline font-medium"
+                >
+                  View race day minibus hire
                 </Link>
               </p>
             </div>
