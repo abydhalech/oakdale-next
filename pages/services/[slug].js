@@ -4,6 +4,7 @@ import MinibusWithDriverPage from '../../components/MinibusWithDriverPage';
 import AirportTransfersPage from '../../components/AirportTransfersPage';
 import WeddingMinibusPage from '../../components/WeddingMinibusPage';
 import FamilyGroupPrivateHirePage from '../../components/FamilyGroupPrivateHirePage';
+import DayTripMinibusPage from '../../components/DayTripMinibusPage';
 import { SERVICES, siteUrl } from '../../components/utils';
 
 const toSlug = (s) =>
@@ -54,6 +55,10 @@ export default function ServicePage({ service }) {
     return <FamilyGroupPrivateHirePage />;
   }
 
+  if (service === 'Day Trips and Excursions') {
+    return <DayTripMinibusPage />;
+  }
+
   const title = `${service} | Oakdale Travel`;
 
   const description =
@@ -85,7 +90,6 @@ export default function ServicePage({ service }) {
       }}
     >
       <div className="max-w-6xl mx-auto px-4 py-12 text-black">
-
         <h1 className="text-3xl font-semibold">
           {service}
         </h1>
@@ -100,7 +104,6 @@ export default function ServicePage({ service }) {
           For a quotation, send us your pickup location, destination, travel
           dates, required times and passenger numbers.
         </p>
-
       </div>
     </Layout>
   );
