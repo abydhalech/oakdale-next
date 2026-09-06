@@ -3,6 +3,7 @@ import SixteenSeaterServicePage from '../../components/SixteenSeaterServicePage'
 import MinibusWithDriverPage from '../../components/MinibusWithDriverPage';
 import AirportTransfersPage from '../../components/AirportTransfersPage';
 import WeddingMinibusPage from '../../components/WeddingMinibusPage';
+import FamilyGroupPrivateHirePage from '../../components/FamilyGroupPrivateHirePage';
 import { SERVICES, siteUrl } from '../../components/utils';
 
 const toSlug = (s) =>
@@ -47,6 +48,10 @@ export default function ServicePage({ service }) {
 
   if (service === 'Wedding Transport Hire') {
     return <WeddingMinibusPage />;
+  }
+
+  if (service === 'Private Hire for Family Events') {
+    return <FamilyGroupPrivateHirePage />;
   }
 
   const title = `${service} | Oakdale Travel`;
