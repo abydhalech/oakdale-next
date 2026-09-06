@@ -5,6 +5,7 @@ import AirportTransfersPage from '../../components/AirportTransfersPage';
 import WeddingMinibusPage from '../../components/WeddingMinibusPage';
 import FamilyGroupPrivateHirePage from '../../components/FamilyGroupPrivateHirePage';
 import DayTripMinibusPage from '../../components/DayTripMinibusPage';
+import GroupNightsOutMinibusPage from '../../components/GroupNightsOutMinibusPage';
 import { SERVICES, siteUrl } from '../../components/utils';
 
 const toSlug = (s) =>
@@ -57,6 +58,10 @@ export default function ServicePage({ service }) {
 
   if (service === 'Day Trips and Excursions') {
     return <DayTripMinibusPage />;
+  }
+
+  if (service === 'Group Nights Out Transport') {
+    return <GroupNightsOutMinibusPage />;
   }
 
   const title = `${service} | Oakdale Travel`;
