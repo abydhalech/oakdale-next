@@ -10,7 +10,7 @@ export default function MinibusWithDriverPage() {
     'Minibus Hire With Driver | Bolton, Wigan & Manchester | Oakdale Travel';
 
   const description =
-    'Minibus hire with a professional driver across Bolton, Wigan, Manchester and the North West. Ideal for airports, events, weddings, schools and group travel.';
+    'Minibus hire with a driver across Bolton, Wigan, Manchester and the North West for weddings, race days, concerts, sporting events, family travel, day trips, nights out and group journeys.';
 
   const jsonLd = [
     {
@@ -91,18 +91,20 @@ export default function MinibusWithDriverPage() {
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-gray-700">
-            Oakdale Travel provides minibus hire with a professional driver
-            across Bolton, Wigan, Manchester and the wider North West. We
-            provide group transport for airport transfers, weddings, events,
-            school journeys, family occasions, business travel, days out and
-            regular contract requirements.
+            Oakdale Travel provides private minibus hire with a driver across
+            Bolton, Wigan, Manchester and the wider North West.
           </p>
 
           <p className="mt-4 leading-7 text-gray-700">
-            With a driver included, your group can travel together without
-            needing to arrange several cars, taxis or designated drivers.
+            Our driver-operated 16-seater minibus can be booked for weddings,
+            race days, concerts and festivals, sporting events, family
+            occasions, days out, nights out, airport transfers and other
+            pre-booked group journeys.
+          </p>
+
+          <p className="mt-4 leading-7 text-gray-700">
             Simply provide your pickup point, destination, travel date,
-            passenger numbers and journey times and we can prepare a quote
+            passenger numbers and journey times and we can prepare a quotation
             based on your requirements.
           </p>
 
@@ -127,7 +129,7 @@ export default function MinibusWithDriverPage() {
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-lg">
             <Image
               src="/fleet/ford-transit-2015-exterior-side.webp"
-              alt="Oakdale Travel minibus available for hire with a professional driver"
+              alt="Oakdale Travel 16-seater minibus available for private hire with driver"
               fill
               priority
               sizes="(max-width: 768px) 100vw, 768px"
@@ -136,8 +138,8 @@ export default function MinibusWithDriverPage() {
           </div>
 
           <p className="mt-3 text-sm text-gray-600">
-            One of Oakdale Travel&apos;s minibuses used for private hire,
-            airport journeys, events, school transport and contract work.
+            Oakdale Travel&apos;s 16-seater minibus used for private group,
+            event, airport, school and contract transport.
           </p>
         </section>
 
@@ -147,18 +149,224 @@ export default function MinibusWithDriverPage() {
           </h2>
 
           <p className="mt-4 max-w-4xl leading-7 text-gray-700">
-            Hiring a minibus with a driver removes the need for someone in
-            your group to drive, plan parking or organise several separate
-            vehicles. Your group can travel together from the agreed pickup
-            point to the destination, with return travel arranged where
-            required.
+            Hiring a minibus with a driver removes the need for somebody in
+            your group to drive, organise several cars or arrange separate
+            taxis. Your group can travel together from the agreed pickup point
+            to the destination.
           </p>
 
           <p className="mt-4 max-w-4xl leading-7 text-gray-700">
-            It is particularly useful for airport journeys, nights out,
-            weddings, sporting events, concerts and group occasions where
-            passengers want straightforward transport in both directions.
+            Return travel can also be arranged in advance, which is
+            particularly useful for weddings, nights out, race days,
+            concerts, sporting events and other occasions where the whole
+            group wants transport in both directions.
           </p>
+        </section>
+
+        <section className="mt-14 grid gap-10 md:grid-cols-2">
+
+          <div>
+            <h2 className="text-2xl font-bold">
+              16-Seater Minibus With Driver
+            </h2>
+
+            <p className="mt-4 leading-7 text-gray-700">
+              Our main private hire vehicle is a 16-seater minibus, suitable
+              for groups wanting to travel together in one vehicle.
+            </p>
+
+            <p className="mt-4 leading-7 text-gray-700">
+              Smaller groups can also request a quotation, so you do not need
+              exactly 16 passengers to use the service.
+            </p>
+
+            <p className="mt-4">
+              <Link
+                href="/services/minibus-hire-16-seater"
+                className="underline font-semibold"
+              >
+                View 16-seater minibus hire
+              </Link>
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold">
+              Private Group Minibus Hire
+            </h2>
+
+            <p className="mt-4 leading-7 text-gray-700">
+              The minibus can be booked for one-off private journeys,
+              birthdays, celebrations, family gatherings, social occasions
+              and other group travel.
+            </p>
+
+            <p className="mt-4">
+              <Link
+                href="/services/private-hire-for-family-events"
+                className="underline font-semibold"
+              >
+                View family &amp; group private hire
+              </Link>
+            </p>
+          </div>
+
+        </section>
+
+        <section className="mt-16">
+          <h2 className="text-2xl md:text-3xl font-bold">
+            Popular Private Minibus Hire With Driver
+          </h2>
+
+          <p className="mt-4 max-w-4xl leading-7 text-gray-700">
+            We provide driver-operated minibus transport for a range of
+            private occasions and group journeys. Choose the type of trip you
+            are planning for more information.
+          </p>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Wedding Minibus Hire
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Transport for wedding guests travelling between homes,
+                hotels, ceremonies, receptions and venues.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/wedding-transport-hire"
+                  className="underline font-semibold"
+                >
+                  View wedding minibus hire
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Race Day Minibus Hire
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Private group transport to Haydock, Aintree, York, Chester
+                and other racecourses across the UK.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/race-day-minibus-hire"
+                  className="underline font-semibold"
+                >
+                  View race day minibus hire
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Concert &amp; Festival Minibus Hire
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Group transport for concerts, festivals and entertainment
+                events with outward and return journeys available.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/concert-festival-event-minibus-hire"
+                  className="underline font-semibold"
+                >
+                  View concert &amp; festival transport
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Match Day &amp; Sporting Events
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Private minibus transport for supporters travelling to
+                football, rugby and other sporting events.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/sporting-event-match-day-minibus-hire"
+                  className="underline font-semibold"
+                >
+                  View sporting event minibus hire
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Family &amp; Group Private Hire
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Private transport for birthdays, family gatherings,
+                celebrations, meals and other group occasions.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/private-hire-for-family-events"
+                  className="underline font-semibold"
+                >
+                  View family &amp; group private hire
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Day Trip Minibus Hire
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Group transport for seaside trips, attractions,
+                sightseeing, family days out and UK excursions.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/day-trips-and-excursions"
+                  className="underline font-semibold"
+                >
+                  View day trip minibus hire
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Group Nights Out
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Private transport for restaurants, birthdays, bars,
+                celebrations and evenings out with return travel available.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/group-nights-out-transport"
+                  className="underline font-semibold"
+                >
+                  View group nights out transport
+                </Link>
+              </p>
+            </div>
+
+          </div>
         </section>
 
         <section className="mt-14 grid gap-10 md:grid-cols-2">
@@ -169,10 +377,10 @@ export default function MinibusWithDriverPage() {
             </h2>
 
             <p className="mt-4 leading-7 text-gray-700">
-              We provide group airport transfers with a driver to destinations
-              including Manchester Airport, Liverpool John Lennon Airport and
-              Leeds Bradford Airport. Outbound and return journeys can be
-              arranged around your flight times.
+              We also provide group airport transfers with a driver to
+              Manchester Airport, Liverpool John Lennon Airport and Leeds
+              Bradford Airport. Outbound and return journeys can be arranged
+              around your travel requirements.
             </p>
 
             <p className="mt-4">
@@ -184,23 +392,6 @@ export default function MinibusWithDriverPage() {
               </Link>
             </p>
           </div>
-
-          <div>
-            <h2 className="text-2xl font-bold">
-              Weddings, Events and Nights Out
-            </h2>
-
-            <p className="mt-4 leading-7 text-gray-700">
-              Minibus hire with a driver is ideal for weddings, concerts,
-              race days, football matches, family events, nights out and
-              other occasions where groups want to travel together and have
-              their return transport organised in advance.
-            </p>
-          </div>
-
-        </section>
-
-        <section className="mt-14 grid gap-10 md:grid-cols-2">
 
           <div>
             <h2 className="text-2xl font-bold">
@@ -224,27 +415,6 @@ export default function MinibusWithDriverPage() {
             </p>
           </div>
 
-          <div>
-            <h2 className="text-2xl font-bold">
-              16-Seater Minibus With Driver
-            </h2>
-
-            <p className="mt-4 leading-7 text-gray-700">
-              Our main minibus service is suitable for groups of up to 16
-              passengers. It provides a practical alternative to arranging
-              several cars or taxis when your group needs to travel together.
-            </p>
-
-            <p className="mt-4">
-              <Link
-                href="/services/minibus-hire-16-seater"
-                className="underline font-semibold"
-              >
-                View 16-seater minibus hire
-              </Link>
-            </p>
-          </div>
-
         </section>
 
         <section className="mt-14">
@@ -253,22 +423,35 @@ export default function MinibusWithDriverPage() {
           </h2>
 
           <p className="mt-4 max-w-4xl leading-7 text-gray-700">
-            We provide minibus transport with a driver across Bolton, Wigan,
-            Manchester and surrounding areas of Greater Manchester and the
-            North West. Longer-distance journeys to destinations elsewhere
-            in the UK can also be quoted.
+            Oakdale Travel is based in Bolton and provides minibus transport
+            with a driver across Bolton, Wigan, Manchester and surrounding
+            areas of Greater Manchester and the North West.
+          </p>
+
+          <p className="mt-4 max-w-4xl leading-7 text-gray-700">
+            Longer-distance journeys to destinations elsewhere in the UK can
+            also be quoted depending on your travel requirements.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-4">
-            <Link href="/areas/bolton" className="underline font-semibold">
+            <Link
+              href="/areas/bolton"
+              className="underline font-semibold"
+            >
               Minibus hire Bolton
             </Link>
 
-            <Link href="/areas/wigan" className="underline font-semibold">
+            <Link
+              href="/areas/wigan"
+              className="underline font-semibold"
+            >
               Minibus hire Wigan
             </Link>
 
-            <Link href="/areas/manchester" className="underline font-semibold">
+            <Link
+              href="/areas/manchester"
+              className="underline font-semibold"
+            >
               Minibus hire Manchester
             </Link>
           </div>
@@ -285,9 +468,20 @@ export default function MinibusWithDriverPage() {
               <h3 className="text-xl font-semibold">
                 Is the driver included in the minibus hire?
               </h3>
+
               <p className="mt-2 leading-7 text-gray-700">
-                Yes. Oakdale Travel provides minibus hire with a professional
-                driver.
+                Yes. Oakdale Travel provides minibus hire with a driver.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold">
+                How many passengers can your minibus carry?
+              </h3>
+
+              <p className="mt-2 leading-7 text-gray-700">
+                Our main minibus can carry groups of up to 16 passengers.
+                Smaller groups can also request a quotation.
               </p>
             </div>
 
@@ -295,6 +489,7 @@ export default function MinibusWithDriverPage() {
               <h3 className="text-xl font-semibold">
                 Can I book a return journey?
               </h3>
+
               <p className="mt-2 leading-7 text-gray-700">
                 Yes. Provide your outward and return dates and times when
                 requesting your quote so we can price the complete journey.
@@ -303,12 +498,24 @@ export default function MinibusWithDriverPage() {
 
             <div>
               <h3 className="text-xl font-semibold">
-                How many passengers can you carry?
+                Can I book a minibus with a driver for a wedding or event?
               </h3>
+
               <p className="mt-2 leading-7 text-gray-700">
-                Our main minibus service accommodates groups of up to 16
-                passengers. Tell us about any significant luggage requirements
-                when requesting your quotation.
+                Yes. We provide private transport for weddings, race days,
+                concerts, festivals, sporting events, family occasions,
+                nights out, day trips and other group journeys.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold">
+                Do you provide minibus hire with a driver for nights out?
+              </h3>
+
+              <p className="mt-2 leading-7 text-gray-700">
+                Yes. Outward and return group transport can be arranged for
+                nights out, meals, birthdays and other evening occasions.
               </p>
             </div>
 
@@ -316,6 +523,7 @@ export default function MinibusWithDriverPage() {
               <h3 className="text-xl font-semibold">
                 Where do you provide minibus hire with a driver?
               </h3>
+
               <p className="mt-2 leading-7 text-gray-700">
                 Our main service areas include Bolton, Wigan and Manchester,
                 alongside surrounding parts of Greater Manchester and the
@@ -334,8 +542,8 @@ export default function MinibusWithDriverPage() {
 
           <p className="mt-4 max-w-3xl leading-7 text-gray-700">
             Send us your pickup location, destination, travel date, required
-            times, passenger numbers and any luggage requirements and we can
-            prepare a quotation for your journey.
+            times, passenger numbers and any relevant luggage requirements and
+            we can prepare a quotation for your journey.
           </p>
 
           <div className="mt-6">

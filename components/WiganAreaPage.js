@@ -10,7 +10,7 @@ export default function WiganAreaPage() {
     'Minibus Hire Wigan | 16-Seater With Driver | Oakdale Travel';
 
   const description =
-    'Reliable minibus hire in Wigan with a driver. 16-seater transport for airports, weddings, events, schools, days out and group travel. Get a quote.';
+    'Minibus hire in Wigan with a driver. 16-seater transport for weddings, race days, concerts, sporting events, family travel, day trips, nights out, airports and group journeys.';
 
   const jsonLd = [
     {
@@ -60,10 +60,17 @@ export default function WiganAreaPage() {
     <Layout seoProps={{ title, description, canonical, jsonLd }}>
       <div className="max-w-6xl mx-auto px-5 py-10 md:py-14">
 
-        <nav aria-label="Breadcrumb" className="text-sm text-gray-600 mb-6">
-          <Link href="/" className="underline">Home</Link>
+        <nav
+          aria-label="Breadcrumb"
+          className="text-sm text-gray-600 mb-6"
+        >
+          <Link href="/" className="underline">
+            Home
+          </Link>
           {' / '}
-          <Link href="/areas" className="underline">Areas</Link>
+          <Link href="/areas" className="underline">
+            Areas
+          </Link>
           {' / '}
           <span>Wigan</span>
         </nav>
@@ -74,19 +81,22 @@ export default function WiganAreaPage() {
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-gray-700">
-            Oakdale Travel provides reliable minibus hire in Wigan for
-            families, groups, schools, businesses and organisations. Our
-            16-seater minibus hire includes a professional driver and can be
-            booked for airport transfers, weddings, sporting events, days out,
-            school transport, private journeys and regular contract work.
+            Oakdale Travel provides 16-seater minibus hire with a driver in
+            Wigan for private groups, families, schools, businesses and
+            organisations.
           </p>
 
           <p className="mt-4 leading-7 text-gray-700">
-            We serve Wigan from our Bolton base and provide both local
-            journeys and longer-distance group transport across the North
-            West and the UK. Tell us your pickup location, destination,
-            travel date, passenger numbers and journey times and we can
-            prepare a quotation for your requirements.
+            We provide group transport for weddings, race days, concerts and
+            festivals, sporting events, family occasions, day trips, nights
+            out, airport transfers and longer-distance journeys across the UK.
+          </p>
+
+          <p className="mt-4 leading-7 text-gray-700">
+            We serve Wigan from our Bolton base and provide both one-off
+            private journeys and regular transport requirements. Tell us your
+            pickup location, destination, travel date, passenger numbers and
+            journey times and we can prepare a quotation.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -119,8 +129,8 @@ export default function WiganAreaPage() {
           </div>
 
           <p className="mt-3 text-sm text-gray-600">
-            One of Oakdale Travel&apos;s minibuses used for private hire,
-            airport transfers, events, school journeys and contract transport.
+            One of Oakdale Travel&apos;s 16-seater minibuses used for private
+            group, event, airport, school and contract transport.
           </p>
         </section>
 
@@ -128,7 +138,10 @@ export default function WiganAreaPage() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
 
             <div>
-              <h2 className="text-lg font-bold">Wigan Area Coverage</h2>
+              <h2 className="text-lg font-bold">
+                Wigan Area Coverage
+              </h2>
+
               <p className="mt-2 text-gray-700">
                 Group transport throughout Wigan and surrounding communities
                 for private and regular journeys.
@@ -136,23 +149,32 @@ export default function WiganAreaPage() {
             </div>
 
             <div>
-              <h2 className="text-lg font-bold">16-Seater With Driver</h2>
+              <h2 className="text-lg font-bold">
+                16-Seater With Driver
+              </h2>
+
               <p className="mt-2 text-gray-700">
-                Driver-operated minibus transport for groups of up to
+                Driver-operated private minibus transport for groups of up to
                 16 passengers.
               </p>
             </div>
 
             <div>
-              <h2 className="text-lg font-bold">Airport &amp; Event Travel</h2>
+              <h2 className="text-lg font-bold">
+                Private Event Travel
+              </h2>
+
               <p className="mt-2 text-gray-700">
-                Transport for airports, weddings, sporting events, concerts,
-                days out and family occasions.
+                Transport for weddings, race days, concerts, sporting events,
+                family occasions and nights out.
               </p>
             </div>
 
             <div>
-              <h2 className="text-lg font-bold">School &amp; Contract Work</h2>
+              <h2 className="text-lg font-bold">
+                School &amp; Contract Work
+              </h2>
+
               <p className="mt-2 text-gray-700">
                 Experience providing regular transport for schools, councils
                 and organisations.
@@ -170,15 +192,14 @@ export default function WiganAreaPage() {
           <p className="mt-4 max-w-4xl leading-7 text-gray-700">
             We provide pickups across Wigan and nearby areas including Wigan
             town centre, Standish, Orrell, Pemberton, Shevington, Hindley and
-            Ashton-in-Makerfield. Depending on the booking, we can arrange one
-            main pickup point or multiple collection points where practical.
+            Ashton-in-Makerfield.
           </p>
 
           <p className="mt-4 max-w-4xl leading-7 text-gray-700">
-            Journeys can include local travel within Greater Manchester as
-            well as transport to airports, event venues, weddings, football
-            matches, race days, family occasions and destinations elsewhere
-            in the UK.
+            Depending on the booking, we can arrange one main pickup point or
+            discuss multiple collection points where practical. Journeys can
+            include local travel around the North West as well as
+            longer-distance transport to destinations elsewhere in the UK.
           </p>
         </section>
 
@@ -212,9 +233,9 @@ export default function WiganAreaPage() {
             </h2>
 
             <p className="mt-4 leading-7 text-gray-700">
-              Oakdale Travel provides minibus hire with a professional driver,
-              so no passenger in your group needs to drive the vehicle.
-              Outbound and return journeys can both be arranged when required.
+              Oakdale Travel provides minibus hire with a driver, so nobody in
+              your group needs to drive the vehicle. Outbound and return
+              journeys can both be arranged when required.
             </p>
 
             <p className="mt-4">
@@ -229,6 +250,162 @@ export default function WiganAreaPage() {
 
         </section>
 
+        <section className="mt-16">
+          <h2 className="text-2xl md:text-3xl font-bold">
+            Popular Private Minibus Hire From Wigan
+          </h2>
+
+          <p className="mt-4 max-w-4xl leading-7 text-gray-700">
+            Private minibus hire is available from Wigan for events,
+            celebrations and group journeys. Choose the type of trip you are
+            planning for more information.
+          </p>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Wedding Minibus Hire
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Group transport from Wigan for wedding guests travelling to
+                ceremonies, receptions, hotels and wedding venues.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/wedding-transport-hire"
+                  className="underline font-semibold"
+                >
+                  View wedding minibus hire
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Race Day Minibus Hire
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Private group transport from Wigan for race days at Haydock,
+                Aintree, York, Chester and other UK racecourses.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/race-day-minibus-hire"
+                  className="underline font-semibold"
+                >
+                  View race day minibus hire
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Concert &amp; Festival Transport
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Group transport from Wigan for concerts, festivals and
+                entertainment events with return travel available.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/concert-festival-event-minibus-hire"
+                  className="underline font-semibold"
+                >
+                  View concert &amp; festival transport
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Match Day &amp; Sporting Events
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Private transport for supporters travelling from Wigan to
+                football, rugby and other sporting events.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/sporting-event-match-day-minibus-hire"
+                  className="underline font-semibold"
+                >
+                  View sporting event minibus hire
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Family &amp; Group Private Hire
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Private transport from Wigan for birthdays, family
+                gatherings, celebration meals and other group occasions.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/private-hire-for-family-events"
+                  className="underline font-semibold"
+                >
+                  View family &amp; group private hire
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Day Trip Minibus Hire
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Group transport from Wigan for seaside trips, attractions,
+                sightseeing, family days out and UK excursions.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/day-trips-and-excursions"
+                  className="underline font-semibold"
+                >
+                  View day trip minibus hire
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Group Nights Out
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Minibus hire from Wigan for restaurants, birthdays,
+                celebrations, bars and evenings out.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/group-nights-out-transport"
+                  className="underline font-semibold"
+                >
+                  View group nights out transport
+                </Link>
+              </p>
+            </div>
+
+          </div>
+        </section>
+
         <section className="mt-14">
           <h2 className="text-2xl md:text-3xl font-bold">
             Wigan Airport Minibus Transfers
@@ -237,15 +414,13 @@ export default function WiganAreaPage() {
           <p className="mt-4 max-w-4xl leading-7 text-gray-700">
             We provide group airport transfers from Wigan, including journeys
             to Manchester Airport, Liverpool John Lennon Airport and Leeds
-            Bradford Airport. A minibus allows the group to travel together
-            rather than arranging several cars, parking bookings or separate
-            taxis.
+            Bradford Airport.
           </p>
 
           <p className="mt-4 max-w-4xl leading-7 text-gray-700">
             When requesting your quote, provide your flight times, passenger
-            numbers and expected luggage so we can properly assess the
-            transport requirements.
+            numbers and expected luggage so we can assess the transport
+            requirements properly.
           </p>
 
           <p className="mt-4">
@@ -266,10 +441,10 @@ export default function WiganAreaPage() {
             </h2>
 
             <p className="mt-4 leading-7 text-gray-700">
-              We provide private minibus transport for weddings, concerts,
-              sporting events, race days, family occasions, nights out and
-              group days out. Return transport can be arranged so your group
-              has the journey home organised in advance.
+              Wigan groups can book private minibus transport for weddings,
+              concerts, sporting events, race days, family occasions, nights
+              out and group days out. Return transport can be arranged so the
+              journey home is organised in advance.
             </p>
           </div>
 
@@ -303,14 +478,17 @@ export default function WiganAreaPage() {
           </h2>
 
           <p className="mt-2 max-w-4xl text-gray-700">
-            Genuine feedback from customers who have travelled with
-            Oakdale Travel.
+            Genuine feedback from customers who have travelled with Oakdale
+            Travel.
           </p>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2">
 
             <article className="border border-gray-200 rounded-lg p-6">
-              <div className="text-lg font-semibold" aria-label="5 out of 5 stars">
+              <div
+                className="text-lg font-semibold"
+                aria-label="5 out of 5 stars"
+              >
                 ★★★★★
               </div>
 
@@ -325,7 +503,10 @@ export default function WiganAreaPage() {
             </article>
 
             <article className="border border-gray-200 rounded-lg p-6">
-              <div className="text-lg font-semibold" aria-label="5 out of 5 stars">
+              <div
+                className="text-lg font-semibold"
+                aria-label="5 out of 5 stars"
+              >
                 ★★★★★
               </div>
 
@@ -334,8 +515,13 @@ export default function WiganAreaPage() {
                 minibus, great customer service, will definitely use again.”
               </blockquote>
 
-              <p className="mt-4 font-semibold">Tracy Conneely Loftus</p>
-              <p className="text-sm text-gray-600">Google review</p>
+              <p className="mt-4 font-semibold">
+                Tracy Conneely Loftus
+              </p>
+
+              <p className="text-sm text-gray-600">
+                Google review
+              </p>
             </article>
 
           </div>
@@ -354,6 +540,24 @@ export default function WiganAreaPage() {
 
         <section className="mt-14">
           <h2 className="text-2xl md:text-3xl font-bold">
+            Why Choose Oakdale Travel for Minibus Hire in Wigan?
+          </h2>
+
+          <ul className="mt-6 space-y-3 max-w-4xl list-disc pl-6 text-gray-700">
+            <li>16-seater minibus hire with a driver.</li>
+            <li>Wigan pickups for private group journeys.</li>
+            <li>Private transport for events and occasions.</li>
+            <li>Outward and return journeys available.</li>
+            <li>School, contract and private hire experience.</li>
+            <li>Airport and longer-distance group transport.</li>
+            <li>
+              Clear quotations based on your actual journey requirements.
+            </li>
+          </ul>
+        </section>
+
+        <section className="mt-14">
+          <h2 className="text-2xl md:text-3xl font-bold">
             Minibus Hire Wigan FAQs
           </h2>
 
@@ -363,9 +567,9 @@ export default function WiganAreaPage() {
               <h3 className="text-xl font-semibold">
                 Does your Wigan minibus hire include a driver?
               </h3>
+
               <p className="mt-2 leading-7 text-gray-700">
-                Yes. Oakdale Travel provides minibus hire with a professional
-                driver.
+                Yes. Oakdale Travel provides minibus hire with a driver.
               </p>
             </div>
 
@@ -373,10 +577,23 @@ export default function WiganAreaPage() {
               <h3 className="text-xl font-semibold">
                 How many passengers can your minibus carry?
               </h3>
+
               <p className="mt-2 leading-7 text-gray-700">
-                Our main minibus service accommodates groups of up to
-                16 passengers. Tell us about any substantial luggage when
-                requesting your quotation.
+                Our main minibus can carry groups of up to 16 passengers.
+                Smaller groups can also request a quotation. Tell us about any
+                substantial luggage when requesting your quote.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold">
+                Can I book a minibus from Wigan for a wedding or event?
+              </h3>
+
+              <p className="mt-2 leading-7 text-gray-700">
+                Yes. Private minibus hire is available for weddings, race
+                days, concerts, festivals, sporting events, family occasions,
+                days out, nights out and other group journeys.
               </p>
             </div>
 
@@ -384,6 +601,7 @@ export default function WiganAreaPage() {
               <h3 className="text-xl font-semibold">
                 Do you provide Wigan to Manchester Airport transfers?
               </h3>
+
               <p className="mt-2 leading-7 text-gray-700">
                 Yes. We provide group transfers from Wigan to Manchester
                 Airport as well as Liverpool John Lennon Airport and Leeds
@@ -395,6 +613,7 @@ export default function WiganAreaPage() {
               <h3 className="text-xl font-semibold">
                 Can I book a return journey?
               </h3>
+
               <p className="mt-2 leading-7 text-gray-700">
                 Yes. Provide both your outward and return dates and times when
                 requesting your quotation.
@@ -405,6 +624,7 @@ export default function WiganAreaPage() {
               <h3 className="text-xl font-semibold">
                 Which parts of Wigan do you cover?
               </h3>
+
               <p className="mt-2 leading-7 text-gray-700">
                 We provide pickups across Wigan and surrounding communities
                 including Standish, Orrell, Pemberton, Shevington, Hindley and
@@ -422,8 +642,8 @@ export default function WiganAreaPage() {
 
           <p className="mt-4 max-w-3xl leading-7 text-gray-700">
             Send us your pickup location, destination, travel date, required
-            times, passenger numbers and any luggage requirements and we can
-            prepare a quotation for your journey.
+            times, passenger numbers and any relevant luggage requirements and
+            we can prepare a quotation for your journey.
           </p>
 
           <div className="mt-6">

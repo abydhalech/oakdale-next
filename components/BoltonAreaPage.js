@@ -10,7 +10,7 @@ export default function BoltonAreaPage() {
     'Minibus Hire Bolton | 16-Seater With Driver | Oakdale Travel';
 
   const description =
-    'Reliable minibus hire in Bolton with a driver. 16-seater transport for airport transfers, schools, weddings, events and contracts. Get a fast quote.';
+    'Minibus hire in Bolton with a driver. 16-seater transport for weddings, race days, concerts, sporting events, family travel, day trips, nights out, airports and group journeys.';
 
   const jsonLd = [
     {
@@ -81,19 +81,22 @@ export default function BoltonAreaPage() {
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-gray-700">
-            Oakdale Travel provides reliable minibus hire in Bolton for
-            groups, families, schools, businesses and organisations. Our
-            16-seater minibus hire includes a professional driver, making it
-            easy to arrange group transport from Bolton to airports, events,
-            schools, weddings, sporting fixtures and destinations across the
-            North West and the UK.
+            Oakdale Travel provides 16-seater minibus hire with a driver in
+            Bolton for private groups, families, schools, businesses and
+            organisations.
           </p>
 
           <p className="mt-4 leading-7 text-gray-700">
-            Based in Bolton, we regularly provide both pre-booked private
-            journeys and contract transport. Whether you need a one-off
-            minibus for a family trip or regular transport for a school or
-            organisation, we can provide a quotation based on your pickup
+            Based in Bolton, we provide group transport for weddings, race
+            days, concerts and festivals, sporting events, family occasions,
+            day trips, nights out, airport transfers and longer-distance
+            journeys across the UK.
+          </p>
+
+          <p className="mt-4 leading-7 text-gray-700">
+            We also provide school and contract transport. Whether you need a
+            one-off private journey or regular transport for a school or
+            organisation, we can prepare a quotation based on your pickup
             point, destination, dates, passenger numbers and journey
             requirements.
           </p>
@@ -127,8 +130,8 @@ export default function BoltonAreaPage() {
             </div>
 
             <p className="mt-3 text-sm text-gray-600">
-              One of Oakdale Travel&apos;s minibuses used for group transport,
-              school journeys, airport transfers and private hire.
+              One of Oakdale Travel&apos;s 16-seater minibuses used for private
+              group, event, airport, school and contract transport.
             </p>
           </div>
 
@@ -136,7 +139,10 @@ export default function BoltonAreaPage() {
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
 
               <div>
-                <h2 className="text-lg font-bold">Bolton-Based Operator</h2>
+                <h2 className="text-lg font-bold">
+                  Bolton-Based Operator
+                </h2>
+
                 <p className="mt-2 text-gray-700">
                   Based in Bolton and providing minibus transport across the
                   borough, Greater Manchester and the North West.
@@ -144,10 +150,24 @@ export default function BoltonAreaPage() {
               </div>
 
               <div>
-                <h2 className="text-lg font-bold">16-Seater With Driver</h2>
+                <h2 className="text-lg font-bold">
+                  16-Seater With Driver
+                </h2>
+
                 <p className="mt-2 text-gray-700">
-                  Group minibus hire with a professional driver for private,
-                  airport, school and contract journeys.
+                  Private group minibus hire with a driver for events, days
+                  out, airport journeys and other bookings.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-lg font-bold">
+                  Private Hire
+                </h2>
+
+                <p className="mt-2 text-gray-700">
+                  Transport for weddings, race days, concerts, sporting
+                  events, family occasions and nights out.
                 </p>
               </div>
 
@@ -155,19 +175,10 @@ export default function BoltonAreaPage() {
                 <h2 className="text-lg font-bold">
                   School &amp; Contract Experience
                 </h2>
+
                 <p className="mt-2 text-gray-700">
                   Experience providing regular transport for schools, councils
                   and organisations, with DBS-checked drivers where required.
-                </p>
-              </div>
-
-              <div>
-                <h2 className="text-lg font-bold">
-                  Private &amp; Contract Hire
-                </h2>
-                <p className="mt-2 text-gray-700">
-                  Transport for airport journeys, events, schools,
-                  organisations and regular contract requirements.
                 </p>
               </div>
 
@@ -180,6 +191,7 @@ export default function BoltonAreaPage() {
                 <h2 className="text-2xl md:text-3xl font-bold">
                   What Our Customers Say
                 </h2>
+
                 <p className="mt-2 text-gray-700">
                   Genuine feedback from customers who have travelled with
                   Oakdale Travel.
@@ -268,17 +280,14 @@ export default function BoltonAreaPage() {
             We provide minibus transport throughout Bolton and surrounding
             areas including Bolton town centre, Farnworth, Horwich,
             Westhoughton, Little Lever, Bromley Cross, Heaton, Lostock,
-            Kearsley and Blackrod. We can collect your group from one location
-            or arrange multiple pickup points where this is practical for the
-            journey.
+            Kearsley and Blackrod.
           </p>
 
           <p className="mt-4 max-w-4xl leading-7 text-gray-700">
-            Popular journeys include transport to Manchester Airport,
-            Liverpool John Lennon Airport, sporting events, race days,
-            weddings, family occasions, school journeys and group days out.
-            We also provide longer-distance transport from Bolton to
-            destinations elsewhere in the UK.
+            We can collect your group from one agreed location or discuss
+            multiple pickup points where this is practical for the journey.
+            Longer-distance journeys from Bolton to destinations elsewhere in
+            the UK can also be quoted.
           </p>
         </section>
 
@@ -290,13 +299,22 @@ export default function BoltonAreaPage() {
             </h2>
 
             <p className="mt-4 leading-7 text-gray-700">
-              Our 16-seater minibus service is suited to groups that want to
-              travel together without organising several cars or taxis. Your
-              journey includes a driver, so your group can be collected in
+              Our 16-seater minibus is suited to groups that want to travel
+              together without organising several separate cars or taxis. The
+              booking includes a driver, so your group can be collected in
               Bolton and transported directly to the destination.
             </p>
 
             <p className="mt-4">
+              <Link
+                href="/services/minibus-hire-16-seater"
+                className="underline font-semibold"
+              >
+                View our 16-seater minibus hire
+              </Link>
+            </p>
+
+            <p className="mt-3">
               <Link
                 href="/services/minibus-with-driver-hire"
                 className="underline font-semibold"
@@ -312,17 +330,15 @@ export default function BoltonAreaPage() {
             </h2>
 
             <p className="mt-4 leading-7 text-gray-700">
-              Travelling to the airport as a group can quickly become
-              complicated when several cars, parking bookings and separate
-              arrival times are involved. We provide group airport transfers
-              from Bolton, including journeys to Manchester Airport,
-              Liverpool John Lennon Airport and Leeds Bradford Airport.
+              We provide group airport transfers from Bolton, including
+              journeys to Manchester Airport, Liverpool John Lennon Airport
+              and Leeds Bradford Airport.
             </p>
 
             <p className="mt-4 leading-7 text-gray-700">
               When requesting a quote, tell us your flight times, passenger
-              numbers and how much luggage you expect to bring so we can
-              assess the journey properly.
+              numbers and expected luggage so we can assess the journey
+              properly.
             </p>
 
             <p className="mt-4">
@@ -344,6 +360,162 @@ export default function BoltonAreaPage() {
             </p>
           </div>
 
+        </section>
+
+        <section className="mt-16">
+          <h2 className="text-2xl md:text-3xl font-bold">
+            Popular Private Minibus Hire From Bolton
+          </h2>
+
+          <p className="mt-4 max-w-4xl leading-7 text-gray-700">
+            Private hire is available from Bolton for a range of events,
+            celebrations and group journeys. Choose the type of trip you are
+            planning for more information.
+          </p>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Wedding Minibus Hire
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Group transport from Bolton for wedding guests travelling to
+                ceremonies, receptions, hotels and wedding venues.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/wedding-transport-hire"
+                  className="underline font-semibold"
+                >
+                  View wedding minibus hire
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Race Day Minibus Hire
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Private group transport from Bolton to Haydock, Aintree,
+                York, Chester and other UK racecourses.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/race-day-minibus-hire"
+                  className="underline font-semibold"
+                >
+                  View race day minibus hire
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Concert &amp; Festival Transport
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Minibus transport from Bolton for concerts, festivals and
+                entertainment events with return travel available.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/concert-festival-event-minibus-hire"
+                  className="underline font-semibold"
+                >
+                  View concert &amp; festival transport
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Match Day &amp; Sporting Events
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Group transport for supporters travelling from Bolton to
+                football, rugby and other sporting events.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/sporting-event-match-day-minibus-hire"
+                  className="underline font-semibold"
+                >
+                  View sporting event minibus hire
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Family &amp; Group Private Hire
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Private transport from Bolton for birthdays, family
+                gatherings, celebrations, meals and other group occasions.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/private-hire-for-family-events"
+                  className="underline font-semibold"
+                >
+                  View family &amp; group private hire
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Day Trip Minibus Hire
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Group transport from Bolton for seaside trips, attractions,
+                sightseeing, family days out and UK excursions.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/day-trips-and-excursions"
+                  className="underline font-semibold"
+                >
+                  View day trip minibus hire
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Group Nights Out
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Private minibus hire from Bolton for restaurants, birthdays,
+                bars, celebrations and evenings out.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/group-nights-out-transport"
+                  className="underline font-semibold"
+                >
+                  View group nights out transport
+                </Link>
+              </p>
+            </div>
+
+          </div>
         </section>
 
         <section className="mt-14">
@@ -382,16 +554,17 @@ export default function BoltonAreaPage() {
           </h2>
 
           <p className="mt-4 max-w-4xl leading-7 text-gray-700">
-            We also provide private minibus hire for weddings, sporting
-            events, concerts, race days, family occasions and group days out.
-            Bolton customers regularly travel to venues throughout Greater
+            Bolton groups use private minibus hire for weddings, sporting
+            events, concerts, race days, family occasions, days out and nights
+            out. Journeys can include destinations throughout Greater
             Manchester, Lancashire, Merseyside and further afield.
           </p>
 
           <p className="mt-4 max-w-4xl leading-7 text-gray-700">
             Local journeys can include Bolton town centre and venues around
             the borough, while longer bookings may include Manchester city
-            centre, football fixtures, airports and major event destinations.
+            centre, football fixtures, racecourses and major event
+            destinations elsewhere in the UK.
           </p>
         </section>
 
@@ -403,6 +576,7 @@ export default function BoltonAreaPage() {
           <ul className="mt-6 space-y-3 max-w-4xl list-disc pl-6 text-gray-700">
             <li>Bolton-based transport operator.</li>
             <li>16-seater minibus hire with a driver.</li>
+            <li>Private group transport for events and occasions.</li>
             <li>DBS-checked drivers for relevant transport services.</li>
             <li>School, contract and private hire experience.</li>
             <li>Airport, event and longer-distance group transport.</li>
@@ -423,6 +597,7 @@ export default function BoltonAreaPage() {
               <h3 className="text-xl font-semibold">
                 Does your Bolton minibus hire include a driver?
               </h3>
+
               <p className="mt-2 leading-7 text-gray-700">
                 Yes. Oakdale Travel provides minibus hire with a driver. Tell
                 us where you need collecting from, your destination, travel
@@ -434,11 +609,24 @@ export default function BoltonAreaPage() {
               <h3 className="text-xl font-semibold">
                 How many passengers can your minibus carry?
               </h3>
+
               <p className="mt-2 leading-7 text-gray-700">
-                Our main minibus service accommodates groups of up to 16
-                passengers. If you are travelling with substantial luggage,
-                include this when requesting your quotation so the journey can
-                be assessed correctly.
+                Our main minibus can carry groups of up to 16 passengers.
+                Smaller groups can also request a quotation. If you are
+                travelling with substantial luggage, include this when
+                requesting your quote.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold">
+                Can I book a minibus from Bolton for a wedding or event?
+              </h3>
+
+              <p className="mt-2 leading-7 text-gray-700">
+                Yes. Private minibus hire is available for weddings, race
+                days, concerts, festivals, sporting events, family occasions,
+                days out, nights out and other group journeys.
               </p>
             </div>
 
@@ -446,6 +634,7 @@ export default function BoltonAreaPage() {
               <h3 className="text-xl font-semibold">
                 Do you provide minibus transfers from Bolton to Manchester Airport?
               </h3>
+
               <p className="mt-2 leading-7 text-gray-700">
                 Yes. Manchester Airport transfers are one of the journeys we
                 provide from Bolton. We can also quote for Liverpool John
@@ -457,6 +646,7 @@ export default function BoltonAreaPage() {
               <h3 className="text-xl font-semibold">
                 Can I hire a minibus for a return journey?
               </h3>
+
               <p className="mt-2 leading-7 text-gray-700">
                 Yes. When requesting your quote, provide both your outward and
                 return dates and times so we can price the complete booking.
@@ -467,6 +657,7 @@ export default function BoltonAreaPage() {
               <h3 className="text-xl font-semibold">
                 Which parts of Bolton do you cover?
               </h3>
+
               <p className="mt-2 leading-7 text-gray-700">
                 We provide pickups across Bolton and surrounding areas,
                 including Farnworth, Horwich, Westhoughton, Little Lever,

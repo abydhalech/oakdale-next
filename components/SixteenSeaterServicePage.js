@@ -10,7 +10,7 @@ export default function SixteenSeaterServicePage() {
     '16-Seater Minibus Hire With Driver | Oakdale Travel';
 
   const description =
-    '16-seater minibus hire with a professional driver for airports, weddings, events, schools and group travel across Bolton, Wigan, Manchester and the North West.';
+    '16-seater minibus hire with a driver for weddings, race days, concerts, sporting events, family travel, day trips and group journeys across Bolton, Wigan, Manchester and the North West.';
 
   const jsonLd = [
     {
@@ -91,18 +91,22 @@ export default function SixteenSeaterServicePage() {
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-gray-700">
-            Oakdale Travel provides 16-seater minibus hire with a professional
+            Oakdale Travel provides private 16-seater minibus hire with a
             driver for group journeys across Bolton, Wigan, Manchester and the
-            wider North West. Our service is suitable for airport transfers,
-            weddings, sporting events, days out, school transport, private
-            bookings and regular contract journeys.
+            wider North West.
           </p>
 
           <p className="mt-4 leading-7 text-gray-700">
-            Hiring one minibus allows your group to travel together rather
-            than arranging several cars or taxis. Tell us your pickup point,
-            destination, travel date, passenger numbers and journey times and
-            we can provide a quotation based on your requirements.
+            Our minibus can be booked for weddings, race days, concerts and
+            festivals, sporting events, family occasions, day trips, nights
+            out, airport transfers and other pre-booked group journeys across
+            the UK.
+          </p>
+
+          <p className="mt-4 leading-7 text-gray-700">
+            Tell us your pickup point, destination, travel date, passenger
+            numbers and journey times and we can provide a quotation based on
+            your requirements.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -126,7 +130,7 @@ export default function SixteenSeaterServicePage() {
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-lg">
             <Image
               src="/fleet/ford-transit-2015-exterior-front.webp"
-              alt="Oakdale Travel 16-seater Ford Transit minibus available for hire with driver"
+              alt="Oakdale Travel 16-seater Ford Transit minibus available for private hire with driver"
               fill
               priority
               sizes="(max-width: 768px) 100vw, 768px"
@@ -136,7 +140,7 @@ export default function SixteenSeaterServicePage() {
 
           <p className="mt-3 text-sm text-gray-600">
             Oakdale Travel&apos;s 16-seater Ford Transit minibus used for
-            private, airport, school and contract transport.
+            private group, event, airport, school and contract transport.
           </p>
         </section>
 
@@ -147,16 +151,15 @@ export default function SixteenSeaterServicePage() {
 
           <p className="mt-4 max-w-4xl leading-7 text-gray-700">
             A 16-seater minibus is a practical option for groups that are too
-            large for a standard taxi or private car but do not require a
-            full-size coach. Your group can travel together with one planned
-            pickup and transport arrangement rather than coordinating several
-            separate vehicles.
+            large for a standard taxi or private car. Your group can travel
+            together with one planned transport arrangement rather than
+            coordinating several separate cars or taxis.
           </p>
 
           <p className="mt-4 max-w-4xl leading-7 text-gray-700">
-            It can work particularly well for families, sports groups,
-            wedding guests, airport passengers, school journeys, business
-            travel and organised group events.
+            It can work particularly well for families, groups of friends,
+            wedding guests, racegoers, football supporters, concert groups,
+            airport passengers and organised days out.
           </p>
         </section>
 
@@ -186,15 +189,196 @@ export default function SixteenSeaterServicePage() {
 
           <div>
             <h2 className="text-2xl font-bold">
+              Private Group Minibus Hire
+            </h2>
+
+            <p className="mt-4 leading-7 text-gray-700">
+              Our 16-seater can be booked for one-off private journeys,
+              celebrations, events, evenings out and longer-distance group
+              travel. Smaller groups can also request a quotation.
+            </p>
+
+            <p className="mt-4">
+              <Link
+                href="/services/private-hire-for-family-events"
+                className="underline font-semibold"
+              >
+                View family &amp; group private hire
+              </Link>
+            </p>
+          </div>
+
+        </section>
+
+        <section className="mt-16">
+          <h2 className="text-2xl md:text-3xl font-bold">
+            Popular 16-Seater Private Hire
+          </h2>
+
+          <p className="mt-4 max-w-4xl leading-7 text-gray-700">
+            Our minibus is used for a wide range of private group journeys.
+            Choose the type of trip you are planning to see more information
+            about the transport we provide.
+          </p>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Wedding Minibus Hire
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Transport for wedding guests travelling between homes,
+                hotels, ceremonies, receptions and venues.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/wedding-transport-hire"
+                  className="underline font-semibold"
+                >
+                  View wedding minibus hire
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Race Day Minibus Hire
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Private group transport to Haydock, Aintree, York, Chester
+                and other racecourses across the UK.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/race-day-minibus-hire"
+                  className="underline font-semibold"
+                >
+                  View race day minibus hire
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Concert &amp; Festival Minibus Hire
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Group transport for concerts, festivals and entertainment
+                events, including outward and return journeys.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/concert-festival-event-minibus-hire"
+                  className="underline font-semibold"
+                >
+                  View concert &amp; festival transport
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Match Day &amp; Sporting Events
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Private minibus transport for supporters travelling to
+                football, rugby and other sporting events.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/sporting-event-match-day-minibus-hire"
+                  className="underline font-semibold"
+                >
+                  View sporting event minibus hire
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Family &amp; Group Private Hire
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Minibus hire for birthdays, family gatherings, celebrations
+                and other private group occasions.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/private-hire-for-family-events"
+                  className="underline font-semibold"
+                >
+                  View family &amp; group private hire
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Day Trip Minibus Hire
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Private transport for seaside trips, attractions,
+                sightseeing, family days out and UK excursions.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/day-trips-and-excursions"
+                  className="underline font-semibold"
+                >
+                  View day trip minibus hire
+                </Link>
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-semibold">
+                Group Nights Out
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                Private transport for restaurants, birthdays, bars,
+                celebrations and evenings out with return travel available.
+              </p>
+
+              <p className="mt-4">
+                <Link
+                  href="/services/group-nights-out-transport"
+                  className="underline font-semibold"
+                >
+                  View group nights out transport
+                </Link>
+              </p>
+            </div>
+
+          </div>
+        </section>
+
+        <section className="mt-14 grid gap-10 md:grid-cols-2">
+
+          <div>
+            <h2 className="text-2xl font-bold">
               Airport Group Transfers
             </h2>
 
             <p className="mt-4 leading-7 text-gray-700">
-              A 16-seater can be particularly useful for groups travelling
-              together to Manchester Airport, Liverpool John Lennon Airport
-              or Leeds Bradford Airport. When requesting your quote, let us
-              know your passenger numbers and expected luggage so we can
-              assess the booking properly.
+              A 16-seater can also be useful for groups travelling together to
+              Manchester Airport, Liverpool John Lennon Airport or Leeds
+              Bradford Airport. When requesting your quote, let us know your
+              passenger numbers and expected luggage so we can assess the
+              booking properly.
             </p>
 
             <p className="mt-4">
@@ -204,23 +388,6 @@ export default function SixteenSeaterServicePage() {
               >
                 View our airport transfer service
               </Link>
-            </p>
-          </div>
-
-        </section>
-
-        <section className="mt-14 grid gap-10 md:grid-cols-2">
-
-          <div>
-            <h2 className="text-2xl font-bold">
-              Private Hire, Weddings and Events
-            </h2>
-
-            <p className="mt-4 leading-7 text-gray-700">
-              Our 16-seater minibus can be booked for weddings, concerts,
-              race days, football matches, family occasions, nights out,
-              sporting events and group days out. Return journeys can also
-              be arranged when required.
             </p>
           </div>
 
@@ -261,15 +428,15 @@ export default function SixteenSeaterServicePage() {
           </p>
 
           <div className="mt-8">
-  <Image
-    src="/fleet/ford-transit-2015-interior-seats.webp"
-    alt="Interior seating of Oakdale Travel 16-seater minibus"
-    width={1200}
-    height={1600}
-    sizes="(max-width: 768px) 280px, 650px"
-    className="w-[280px] sm:w-[380px] md:w-[650px] h-auto rounded-lg"
-  />
-</div>
+            <Image
+              src="/fleet/ford-transit-2015-interior-seats.webp"
+              alt="Interior seating of Oakdale Travel 16-seater minibus"
+              width={1200}
+              height={1600}
+              sizes="(max-width: 768px) 280px, 650px"
+              className="w-[280px] sm:w-[380px] md:w-[650px] h-auto rounded-lg"
+            />
+          </div>
         </section>
 
         <section className="mt-14">
@@ -278,10 +445,11 @@ export default function SixteenSeaterServicePage() {
           </h2>
 
           <p className="mt-4 max-w-4xl leading-7 text-gray-700">
-            Oakdale Travel provides group transport across Greater Manchester
-            and the surrounding North West. Our main service areas include
-            Bolton, Wigan and Manchester, alongside surrounding towns and
-            longer-distance journeys throughout the UK.
+            Oakdale Travel is based in Bolton and provides group transport
+            across Greater Manchester and the surrounding North West. Our
+            main service areas include Bolton, Wigan and Manchester,
+            alongside surrounding towns and longer-distance journeys
+            throughout the UK.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-4">
@@ -319,6 +487,7 @@ export default function SixteenSeaterServicePage() {
               <h3 className="text-xl font-semibold">
                 Does the minibus come with a driver?
               </h3>
+
               <p className="mt-2 leading-7 text-gray-700">
                 Yes. Oakdale Travel provides 16-seater minibus hire with a
                 driver.
@@ -327,8 +496,20 @@ export default function SixteenSeaterServicePage() {
 
             <div>
               <h3 className="text-xl font-semibold">
+                Do I need exactly 16 passengers?
+              </h3>
+
+              <p className="mt-2 leading-7 text-gray-700">
+                No. Smaller groups can also request a quotation for the
+                16-seater minibus.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold">
                 Can I book the minibus for a return journey?
               </h3>
+
               <p className="mt-2 leading-7 text-gray-700">
                 Yes. Provide your outward and return dates and times when
                 requesting a quote so we can price the complete journey.
@@ -337,8 +518,21 @@ export default function SixteenSeaterServicePage() {
 
             <div>
               <h3 className="text-xl font-semibold">
+                Can I book the minibus for a wedding, concert or race day?
+              </h3>
+
+              <p className="mt-2 leading-7 text-gray-700">
+                Yes. The minibus can be booked for weddings, race days,
+                concerts, festivals, sporting events, family occasions,
+                nights out, day trips and other private group journeys.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold">
                 Can a 16-seater minibus be used for airport transfers?
               </h3>
+
               <p className="mt-2 leading-7 text-gray-700">
                 Yes. We provide group airport transfers including Manchester,
                 Liverpool John Lennon and Leeds Bradford airports. Passenger
@@ -351,6 +545,7 @@ export default function SixteenSeaterServicePage() {
               <h3 className="text-xl font-semibold">
                 Which areas do you provide 16-seater minibus hire in?
               </h3>
+
               <p className="mt-2 leading-7 text-gray-700">
                 We provide minibus hire across Bolton, Wigan, Manchester and
                 other parts of Greater Manchester and the North West, as well
@@ -368,8 +563,8 @@ export default function SixteenSeaterServicePage() {
 
           <p className="mt-4 max-w-3xl leading-7 text-gray-700">
             Send us your pickup point, destination, travel date, required
-            times, passenger numbers and expected luggage to receive a quote
-            for your journey.
+            times, passenger numbers and expected luggage where relevant to
+            receive a quote for your journey.
           </p>
 
           <div className="mt-6">
