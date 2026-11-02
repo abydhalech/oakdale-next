@@ -6,6 +6,7 @@ export default function SEO({
   description,
   canonical,
   jsonLd,
+  noindex = false,
 }) {
   const t =
     title ||
@@ -25,6 +26,8 @@ export default function SEO({
       />
 
       <title>{t}</title>
+
+      {noindex && <meta name="robots" content="noindex, follow" />}
 
       <meta
         name="description"
