@@ -92,6 +92,7 @@ export default function ServicePage({ service }) {
         description,
         canonical,
         jsonLd,
+        noindex: true,
       }}
     >
       <div className="max-w-6xl mx-auto px-4 py-12 text-black">
