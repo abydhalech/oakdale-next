@@ -33,6 +33,8 @@ export default function Layout({ children, seoProps = {} }) {
 
       <Link href="/" className="hover:underline">Home</Link>
       <Link href="/services" className="hover:underline">Services</Link>
+      <Link href="/services/minibus-hire-16-seater" className="hover:underline">16-Seater Hire</Link>
+      <Link href="/services/airport-transfers-manchester,-liverpool,-leeds-bradford" className="hover:underline">Airport Transfers</Link>
       <Link href="/areas" className="hover:underline">Areas</Link>
       <Link href="/fleet" className="hover:underline">Fleet</Link>
       <Link href="/faq" className="hover:underline">FAQ</Link>
@@ -76,6 +78,12 @@ export default function Layout({ children, seoProps = {} }) {
 
         <Link href="/services" onClick={() => setMenuOpen(false)}>
           Services
+        </Link>
+        <Link href="/services/minibus-hire-16-seater" onClick={() => setMenuOpen(false)}>
+          16-Seater Hire
+        </Link>
+        <Link href="/services/airport-transfers-manchester,-liverpool,-leeds-bradford" onClick={() => setMenuOpen(false)}>
+          Airport Transfers
         </Link>
 
         <Link href="/areas" onClick={() => setMenuOpen(false)}>
