@@ -1,11 +1,6 @@
 name: Refresh dependency lockfile and audit
 on:
-  push:
-    branches:
-      - fix/lockfile-audit-20261102
-    paths:
-      - .github/workflows/refresh-lockfile.yml
-      - package.json
+  workflow_dispatch:
 permissions:
   contents: write
 jobs:
