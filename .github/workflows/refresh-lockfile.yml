@@ -20,6 +20,8 @@ jobs:
           node-version: '22'
       - name: Regenerate lockfile
         run: npm install --package-lock-only --ignore-scripts
+      - name: Apply nonbreaking npm security fixes
+        run: npm audit fix --package-lock-only --ignore-scripts || true
       - name: Audit production dependencies
         run: npm audit --omit=dev --audit-level=high
         continue-on-error: true
