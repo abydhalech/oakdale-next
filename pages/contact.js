@@ -44,7 +44,7 @@ export default function Contact() {
   }
 
   return (
-    <Layout seoProps={{ title: 'Contact us — Oakdale Travel', description: 'Get in touch with Oakdale Travel for bookings, quotes and enquiries.' }}>
+    <Layout seoProps={{ title: 'Contact us — Oakdale Travel', description: 'Get in touch with Oakdale Travel for bookings, quotes and enquiries.', canonical: 'https://oakdaletravel.co.uk/contact' }}>
       <div className="max-w-3xl mx-auto px-4 py-12 text-black">
         <h1 className="text-3xl font-semibold">Contact us</h1>
         <p className="mt-3 text-black/70">
