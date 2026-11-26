@@ -99,10 +99,12 @@ export default function AirportTransfersPage() {
           </p>
 
           <p className="mt-4 leading-7 text-gray-700">
-            Our 16-seater minibus is ideal when your group is too large for a
-            normal car or taxi. We can transport groups travelling to
-            Manchester Airport, Liverpool John Lennon Airport and Leeds
-            Bradford Airport, with outward and return journeys available.
+            When requesting an airport quote, include your departure airport and
+            terminal, flight time, passenger count and the number and size of
+            bags. For a return pickup, give your arrival flight number and
+            date, including overnight arrivals. We will assess seating,
+            luggage space and the journey schedule before confirming your
+            booking.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
