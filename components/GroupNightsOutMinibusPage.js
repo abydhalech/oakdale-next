@@ -11,7 +11,7 @@ export default function GroupNightsOutMinibusPage() {
     'Group Nights Out Minibus Hire | 16-Seater With Driver | Oakdale Travel';
 
   const description =
-    'Group nights out minibus hire with a driver from Bolton, Wigan, Manchester and the North West. 16-seater transport for bars, restaurants, birthdays and evenings out.';
+    'Pre-book a minibus and driver for group evenings out in Manchester, Liverpool and beyond, with agreed pickup and return arrangements.';
 
   const jsonLd = [
     {
@@ -99,16 +99,15 @@ export default function GroupNightsOutMinibusPage() {
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-gray-700">
-            Oakdale Travel provides private minibus hire with a driver for
-            group nights out from Bolton, Wigan, Manchester and surrounding
-            areas.
+            Arrange group transport for an evening out with a private driver from
+            Bolton, Wigan, Manchester and surrounding areas.
           </p>
 
           <p className="mt-4 leading-7 text-gray-700">
-            Whether your group is heading to restaurants, bars, clubs,
-            birthday celebrations or an evening event, our 16-seater minibus
-            allows everyone to travel together with return transport arranged
-            in advance.
+            Tell us the venue, number of passengers and expected finish time.
+            If the return is after midnight, specify the next calendar date
+            and the intended collection point. Include any separate drop-offs
+            so we can assess the full route and quote accordingly.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
