@@ -1,9 +1,15 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Layout from './Layout';
+import QuickQuote from './QuickQuote';
+import { useRef } from 'react';
 import { siteUrl, gmbUrl } from './utils';
 
 export default function BoltonAreaPage() {
+  const quoteRef = useRef(null);
+  function openQuote() {
+    if (quoteRef.current) quoteRef.current.open = true;
+  }
   const canonical = `${siteUrl}/areas/bolton`;
 
   const title =
@@ -102,12 +108,13 @@ export default function BoltonAreaPage() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              href="/contact"
+            <a
+              href="#bolton-quote"
+              onClick={openQuote}
               className="bg-black text-white px-6 py-3 rounded font-semibold"
             >
               Get a Quote
-            </Link>
+            </a>
 
             <Link
               href="/services/minibus-hire-16-seater"
@@ -679,14 +686,15 @@ export default function BoltonAreaPage() {
             additional journey requirements.
           </p>
 
-          <div className="mt-6">
-            <Link
-              href="/contact"
-              className="inline-block bg-black text-white px-7 py-3 rounded font-semibold"
-            >
-              Request a Quote
-            </Link>
-          </div>
+          <details ref={quoteRef} id="bolton-quote" className="group mt-6 scroll-mt-28 max-w-4xl rounded-lg border border-gray-200 p-4 sm:p-6">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-3 rounded bg-black px-5 py-3 font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 [&::-webkit-details-marker]:hidden">
+              <span className="group-open:hidden">Request a Quote</span>
+              <span className="hidden group-open:inline">Close quote form</span>
+              <span aria-hidden="true" className="group-open:hidden">+</span>
+              <span aria-hidden="true" className="hidden group-open:inline">−</span>
+            </summary>
+            <QuickQuote embedded sourcePage="/areas/bolton" />
+          </details>
         </section>
 
       </div>
