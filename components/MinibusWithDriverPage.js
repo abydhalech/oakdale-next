@@ -91,21 +91,26 @@ export default function MinibusWithDriverPage() {
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-gray-700">
-            Oakdale Travel provides private minibus hire with a driver across
-            Bolton, Wigan, Manchester and the wider North West.
+            Book a private minibus and driver together for a pre-arranged
+            journey from Bolton, Wigan, Manchester or the surrounding North
+            West. This is a driver-operated service, not self-drive rental.
           </p>
 
           <p className="mt-4 leading-7 text-gray-700">
-            Our driver-operated 16-seater minibus can be booked for weddings,
-            race days, concerts and festivals, sporting events, family
-            occasions, days out, nights out, airport transfers and other
-            pre-booked group journeys.
+            Plan your transport around your group's itinerary. Let us know
+            whether you need a one-way transfer, a return pickup at an agreed
+            time or transport involving several stops. Include each pickup
+            address and any planned waiting time so we can assess the route
+            and availability before quoting.
           </p>
 
           <p className="mt-4 leading-7 text-gray-700">
-            Simply provide your pickup point, destination, travel date,
-            passenger numbers and journey times and we can prepare a quotation
-            based on your requirements.
+            Your quote depends on the journey, timings and passenger
+            requirements. For vehicle capacity, see our{' '}
+            <Link href="/services/minibus-hire-16-seater" className="underline font-semibold">
+              16-seater minibus hire guide
+            </Link>
+            .
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
