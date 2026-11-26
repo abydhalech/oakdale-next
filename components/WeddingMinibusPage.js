@@ -10,7 +10,7 @@ export default function WeddingMinibusPage() {
     'Wedding Minibus Hire | 16-Seater With Driver | Oakdale Travel';
 
   const description =
-    'Wedding minibus hire with a driver for guest transport across Bolton, Wigan, Manchester and the North West. 16-seater transport for venues, hotels and return journeys.';
+    'Wedding guest transport for up to 16 passengers. Arrange hotel, ceremony, reception and return pickups across Bolton, Wigan and Greater Manchester.';
 
   const jsonLd = [
     {
@@ -98,15 +98,16 @@ export default function WeddingMinibusPage() {
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-gray-700">
-            Oakdale Travel provides wedding minibus hire with a driver for
-            couples, families and wedding guests across Bolton, Wigan,
-            Manchester and the wider North West.
+            Arrange wedding guest transport between hotels, ceremony venues and
+            receptions with Oakdale Travel. Our driver-operated minibus serves
+            Bolton, Wigan, Manchester and the wider North West.
           </p>
 
           <p className="mt-4 leading-7 text-gray-700">
-            Our 16-seater minibus can be used to transport guests between
-            homes, hotels, ceremony venues and wedding receptions, with
-            outward and return journeys arranged around your wedding plans.
+            For an accurate quote, share the ceremony and reception addresses,
+            guest numbers for each leg, the time guests need to arrive and the
+            proposed evening pickup. If groups need separate departures or
+            more than 16 seats, tell us so we can assess the itinerary.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
