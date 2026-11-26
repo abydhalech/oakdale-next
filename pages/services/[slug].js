@@ -1,3 +1,4 @@
+import { QuotePanel } from '../../components/QuotePanel';
 import Layout from '../../components/Layout';
 import SixteenSeaterServicePage from '../../components/SixteenSeaterServicePage';
 import MinibusWithDriverPage from '../../components/MinibusWithDriverPage';
@@ -110,6 +111,10 @@ export default function ServicePage({ service }) {
           For a quotation, send us your pickup location, destination, travel
           dates, required times and passenger numbers.
         </p>
+        <section className="mt-10 border-t pt-8">
+          <h2 className="text-2xl font-semibold">Get a Minibus Hire Quote</h2>
+          <div className="mt-6"><QuotePanel sourcePage={canonical.slice(siteUrl.length)} /></div>
+        </section>
       </div>
     </Layout>
   );

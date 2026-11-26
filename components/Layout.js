@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import SEO from './SEO';
+import { QuoteLink } from './QuotePanel';
 import Link from 'next/link';
 import Image from 'next/image';
 import { phone, email, address, gmbUrl, siteUrl } from './utils';
@@ -7,6 +8,8 @@ import { phone, email, address, gmbUrl, siteUrl } from './utils';
 
 export default function Layout({ children, seoProps = {} }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const path = seoProps.canonical?.startsWith(siteUrl) ? seoProps.canonical.slice(siteUrl.length) : null;
+  const hasQuote = path !== null && (path === '' || path === '/' || path === '/fleet' || /^\/(areas|services|airport-transfers)(\/|$)/.test(path));
 
   return (
     <>
@@ -40,9 +43,7 @@ export default function Layout({ children, seoProps = {} }) {
       <Link href="/faq" className="hover:underline">FAQ</Link>
       <Link href="/contact" className="hover:underline">Contact</Link>
 
-      <Link href="/contact" className="button-primary text-xs">
-        Get a Quote
-      </Link>
+      <QuoteLink enabled={hasQuote} className="button-primary text-xs">Get a Quote</QuoteLink>
     </nav>
 
     {/* Mobile controls */}
@@ -102,13 +103,7 @@ export default function Layout({ children, seoProps = {} }) {
           Contact
         </Link>
 
-        <Link
-          href="/contact"
-          onClick={() => setMenuOpen(false)}
-          className="inline-block bg-white text-black px-4 py-3 rounded font-semibold text-center"
-        >
-          Get a Quote
-        </Link>
+        <QuoteLink enabled={hasQuote} onClick={() => setMenuOpen(false)} className="inline-block bg-white text-black px-4 py-3 rounded font-semibold text-center">Get a Quote</QuoteLink>
 
       </div>
     </nav>

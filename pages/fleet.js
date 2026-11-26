@@ -1,3 +1,4 @@
+import { QuotePanel } from '../components/QuotePanel';
 import Image from 'next/image';
 import Layout from '../components/Layout';
 import { siteUrl } from '../components/utils';
@@ -38,7 +39,8 @@ export default function Fleet() {
           ))}
         </div>
         <div className="mt-10">
-          <a href="/contact" className="button-primary">Request a quote</a>
+          <h2 className="text-2xl font-semibold mb-6">Get a Minibus Hire Quote</h2>
+          <QuotePanel sourcePage="/fleet" />
         </div>
       </div>
     </Layout>

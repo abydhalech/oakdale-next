@@ -1,3 +1,4 @@
+import { QuotePanel } from '../../components/QuotePanel';
 import Link from 'next/link';
 import Layout from '../../components/Layout';
 import { siteUrl } from '../../components/utils';
@@ -258,12 +259,7 @@ export default function ServicesPage() {
           </p>
 
           <div className="mt-6">
-            <Link
-              href="/contact"
-              className="inline-block bg-black text-white px-7 py-3 rounded font-semibold"
-            >
-              Request a Quote
-            </Link>
+            <QuotePanel sourcePage="/services" />
           </div>
         </section>
 

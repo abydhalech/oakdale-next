@@ -11,6 +11,7 @@ export default function Contact() {
 
   async function handleSubmit(e) {
     e.preventDefault();
+    if (submitting || submitted) return;
     setErrorMsg('');
 
     if (!FORMSPREE_ENDPOINT) {
@@ -32,6 +33,7 @@ export default function Contact() {
       if (res.ok) {
         setSubmitted(true);
         form.reset();
+        try { window.location.assign('/thank-you'); } catch { /* Keep the success message if navigation fails. */ }
       } else {
         const json = await res.json().catch(() => ({}));
         setErrorMsg(json?.error || 'Something went wrong. Please try again.');
@@ -84,6 +86,7 @@ export default function Contact() {
               required
             />
 
+            <input type="hidden" name="source_page" value="/contact" />
             <input type="hidden" name="_subject" value="Contact form — Oakdale Travel" />
             <input type="text" name="_gotcha" className="hidden" aria-hidden="true" />
 
@@ -100,7 +103,7 @@ export default function Contact() {
             {errorMsg && <p className="text-red-600 text-sm">{errorMsg}</p>}
             {!FORMSPREE_ENDPOINT && (
               <p className="text-amber-600 text-sm">
-                Warning: No Formspree endpoint set in Vercel environment.
+                Online enquiries are temporarily unavailable. Please call us on 07758 703691.
               </p>
             )}
           </form>
@@ -108,6 +111,7 @@ export default function Contact() {
           <div className="mt-6 rounded-xl border border-black/10 p-4 bg-black/5">
             <p className="font-medium">✅ Thanks — your message has been sent.</p>
             <p className="mt-1">We’ll reply soon. If urgent, call us on 07758 703691.</p>
+            <a href="/thank-you" className="underline">View confirmation</a>
           </div>
         )}
       </div>

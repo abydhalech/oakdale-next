@@ -1,3 +1,4 @@
+import { QuoteLink } from '../components/QuotePanel';
 import Link from 'next/link';
 import QuickQuote from '../components/QuickQuote';
 import Layout from '../components/Layout';
@@ -81,12 +82,7 @@ export default function Home() {
           </p>
 
           <div className="mt-7 flex flex-wrap gap-3">
-            <Link
-              href="/contact"
-              className="bg-black text-white px-6 py-3 rounded font-semibold"
-            >
-              Get a Quote
-            </Link>
+            <QuoteLink className="bg-black text-white px-6 py-3 rounded font-semibold">Get a Quote</QuoteLink>
 
             <Link
               href="/services/minibus-hire-16-seater"
@@ -97,7 +93,7 @@ export default function Home() {
           </div>
         </section>
 
-        <QuickQuote />
+        <QuickQuote sourcePage="/" />
 
         <section className="mt-14">
           <h2 className="text-2xl md:text-3xl font-semibold">

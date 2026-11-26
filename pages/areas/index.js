@@ -1,3 +1,4 @@
+import { QuotePanel } from '../../components/QuotePanel';
 import Layout from '../../components/Layout';
 import { siteUrl } from '../../components/utils';
 
@@ -42,6 +43,10 @@ export default function AreasIndex() {
             </div>
           ))}
         </div>
+        <section className="mt-10 border-t pt-8">
+          <h2 className="text-2xl font-semibold">Get a Minibus Hire Quote</h2>
+          <div className="mt-6"><QuotePanel sourcePage="/areas" /></div>
+        </section>
       </div>
     </Layout>
   );
