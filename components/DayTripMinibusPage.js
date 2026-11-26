@@ -11,7 +11,7 @@ export default function DayTripMinibusPage() {
     'Day Trip Minibus Hire | 16-Seater With Driver | Oakdale Travel';
 
   const description =
-    'Day trip minibus hire with a driver for families and groups from Bolton, Wigan, Manchester and the North West. 16-seater private transport for UK days out and excursions.';
+    'Book a day-trip minibus with driver to Blackpool, Chester, the Lake District and other UK destinations from Greater Manchester.';
 
   const jsonLd = [
     {
@@ -99,16 +99,16 @@ export default function DayTripMinibusPage() {
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-gray-700">
-            Oakdale Travel provides private day trip minibus hire with a
-            driver for families, friends and groups travelling from Bolton,
-            Wigan, Manchester and surrounding areas.
+            Plan a group day out with private minibus transport from Bolton,
+            Wigan, Manchester and surrounding areas. Oakdale Travel can quote
+            for your group's outward and return travel.
           </p>
 
           <p className="mt-4 leading-7 text-gray-700">
-            Whether your group is planning a seaside trip, family day out,
-            sightseeing visit, attraction, shopping trip or longer-distance
-            excursion, our 16-seater minibus allows everybody to travel
-            together.
+            When planning a day trip, include the destination, any intermediate
+            stops, attraction opening or ticket times and the intended return
+            time. If your group wants several stops or a long day, we will
+            assess the proposed timetable before confirming availability.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
