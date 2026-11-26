@@ -11,7 +11,7 @@ export default function FamilyGroupPrivateHirePage() {
     'Family & Group Minibus Hire | Private 16-Seater With Driver | Oakdale Travel';
 
   const description =
-    'Private minibus hire for family events, birthdays, celebrations, reunions and group journeys. 16-seater with driver across Bolton, Wigan, Manchester and the North West.';
+    'Private minibus transport for family celebrations, birthdays and reunions. Plan group pickups and return travel for up to 16 passengers.';
 
   const jsonLd = [
     {
@@ -99,16 +99,16 @@ export default function FamilyGroupPrivateHirePage() {
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-gray-700">
-            Oakdale Travel provides private 16-seater minibus hire with a
-            driver for families and groups across Bolton, Wigan, Manchester
-            and the wider North West.
+            Keep family celebrations simple with a pre-booked minibus and driver.
+            Oakdale Travel provides private group transport from Bolton, Wigan,
+            Manchester and the wider North West.
           </p>
 
           <p className="mt-4 leading-7 text-gray-700">
-            Whether you are travelling to a birthday, family celebration,
-            reunion, meal, day out or another private occasion, we can arrange
-            pre-booked group transport for the outward journey, return journey
-            or both.
+            For birthdays, reunions and family meals, tell us how many adults and
+            children are travelling, whether relatives need collecting from
+            different addresses and whether anyone has accessibility or child
+            seating requirements. We can assess the arrangements before quoting.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
