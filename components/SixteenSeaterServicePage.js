@@ -10,7 +10,7 @@ export default function SixteenSeaterServicePage() {
     '16-Seater Minibus Hire With Driver | Oakdale Travel';
 
   const description =
-    '16-seater minibus hire with a driver for weddings, race days, concerts, sporting events, family travel, day trips and group journeys across Bolton, Wigan, Manchester and the North West.';
+    'Hire a 16-seat minibus with driver from Bolton and Greater Manchester. Check passenger capacity, luggage requirements and booking details for your group.';
 
   const jsonLd = [
     {
@@ -91,16 +91,16 @@ export default function SixteenSeaterServicePage() {
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-gray-700">
-            Oakdale Travel provides private 16-seater minibus hire with a
-            driver for group journeys across Bolton, Wigan, Manchester and the
-            wider North West.
+            Our 16-seater minibus carries up to 16 passengers and is available
+            with a driver for pre-booked journeys from Bolton, Wigan,
+            Manchester and the wider North West.
           </p>
 
           <p className="mt-4 leading-7 text-gray-700">
-            Our minibus can be booked for weddings, race days, concerts and
-            festivals, sporting events, family occasions, day trips, nights
-            out, airport transfers and other pre-booked group journeys across
-            the UK.
+            When choosing a vehicle, count every passenger, including children,
+            and tell us how much luggage or equipment you will bring. Seating
+            capacity alone does not establish whether a particular group and
+            its baggage will fit; we can assess this before confirming a booking.
           </p>
 
           <p className="mt-4 leading-7 text-gray-700">
