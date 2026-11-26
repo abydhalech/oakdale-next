@@ -172,7 +172,7 @@ export default function ServicesPage() {
                     href={service.href}
                     className="underline font-semibold"
                   >
-                    View service
+                    {service.name}
                   </Link>
                 </p>
               </div>
@@ -210,7 +210,7 @@ export default function ServicesPage() {
                     href={service.href}
                     className="underline font-semibold"
                   >
-                    View service
+                    {service.name}
                   </Link>
                 </p>
               </div>
@@ -238,7 +238,7 @@ export default function ServicesPage() {
                     href={service.href}
                     className="underline font-semibold"
                   >
-                    View service
+                    {service.name}
                   </Link>
                 </p>
               </div>
