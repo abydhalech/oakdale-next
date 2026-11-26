@@ -1,3 +1,4 @@
+import { QuoteLink, QuotePanel } from '../../components/QuotePanel';
 import Link from 'next/link';
 import Layout from '../../components/Layout';
 import BoltonAreaPage from '../../components/BoltonAreaPage';
@@ -180,12 +181,7 @@ export default function AreaPage({ area }) {
           )}
 
           <div className="mt-7 flex flex-wrap gap-3">
-            <Link
-              href="/contact"
-              className="bg-black text-white px-6 py-3 rounded font-semibold"
-            >
-              Get a Quote
-            </Link>
+            <QuoteLink className="bg-black text-white px-6 py-3 rounded font-semibold">Get a Quote</QuoteLink>
 
             <Link
               href="/services/minibus-hire-16-seater"
@@ -294,12 +290,7 @@ export default function AreaPage({ area }) {
           </p>
 
           <div className="mt-6">
-            <Link
-              href="/contact"
-              className="inline-block bg-black text-white px-7 py-3 rounded font-semibold"
-            >
-              Request a Quote
-            </Link>
+            <QuotePanel sourcePage={canonical.slice(siteUrl.length)} />
           </div>
         </section>
 

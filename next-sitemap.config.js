@@ -9,6 +9,7 @@ module.exports = {
   // A retired coach URL permanently redirects to the minibus page and must not appear in the sitemap.
   exclude: [
     '/404',
+    '/thank-you',
     '/services/coach-hire-33-seater-small-and-medium-groups',
     // Generic placeholder pages have near-identical content and are noindex.
     '/services/school-transport-services',

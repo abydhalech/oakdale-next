@@ -1,3 +1,4 @@
+import { QuoteLink, QuotePanel } from './QuotePanel';
 import Link from 'next/link';
 import Image from 'next/image';
 import Layout from './Layout';
@@ -110,12 +111,7 @@ export default function SixteenSeaterServicePage() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              href="/contact"
-              className="bg-black text-white px-6 py-3 rounded font-semibold"
-            >
-              Get a Quote
-            </Link>
+            <QuoteLink className="bg-black text-white px-6 py-3 rounded font-semibold">Get a Quote</QuoteLink>
 
             <Link
               href="/services/minibus-with-driver-hire"
@@ -568,12 +564,7 @@ export default function SixteenSeaterServicePage() {
           </p>
 
           <div className="mt-6">
-            <Link
-              href="/contact"
-              className="inline-block bg-black text-white px-7 py-3 rounded font-semibold"
-            >
-              Request a Quote
-            </Link>
+            <QuotePanel sourcePage={canonical.slice(siteUrl.length)} />
           </div>
         </section>
 

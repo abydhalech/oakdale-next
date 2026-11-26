@@ -25,6 +25,7 @@ export default function QuickQuote({ embedded = false, sourcePage = '' } = {}) {
 
   async function handleSubmit(e) {
     e.preventDefault();
+    if (submitting || submitted) return;
     setErrorMsg('');
 
     if (!FORMSPREE_ENDPOINT) {
@@ -52,6 +53,7 @@ export default function QuickQuote({ embedded = false, sourcePage = '' } = {}) {
         form.reset();
         setViaPoints([]);
         setJourneyType('return');
+        try { window.location.assign('/thank-you'); } catch { /* Keep the on-page success confirmation if navigation fails. */ }
       } else {
         const json = await res.json().catch(() => ({}));
         setErrorMsg(json?.error || 'Something went wrong. Please try again or call us.');
@@ -65,8 +67,9 @@ export default function QuickQuote({ embedded = false, sourcePage = '' } = {}) {
 
   return (
     <section
+      id={embedded ? undefined : "quote"}
       aria-label="Quick quote form"
-      className={embedded ? "mt-4" : "mt-12 border border-black/10 rounded-2xl p-5 md:p-6 bg-white"}
+      className={embedded ? "mt-4" : "mt-12 scroll-mt-28 border border-black/10 rounded-2xl p-5 md:p-6 bg-white"}
     >
       {!embedded && <h2 className="text-2xl font-semibold text-black">Get a quick quote</h2>}
       <p className="text-black/70 mt-2">
@@ -133,8 +136,7 @@ export default function QuickQuote({ embedded = false, sourcePage = '' } = {}) {
             ))}
           </div>
 
-          {embedded && (
-            <div className="grid sm:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-3 gap-4">
               <label className="grid gap-1 text-sm font-medium">Passengers
                 <input className="border border-black/20 rounded-lg px-3 h-12" name="passengers" type="number" min="1" step="1" required placeholder="Number of passengers" />
               </label>
@@ -154,8 +156,7 @@ export default function QuickQuote({ embedded = false, sourcePage = '' } = {}) {
                   <option>Not sure yet</option>
                 </select>
               </label>
-            </div>
-          )}
+          </div>
           {/* Row 2 */}
           <div className="grid md:grid-cols-3 gap-4">
             <input
@@ -165,11 +166,11 @@ export default function QuickQuote({ embedded = false, sourcePage = '' } = {}) {
               placeholder="Destination (full address & postcode)"
               required
             />
-            {(!embedded || journeyType !== "one-way") && <><input
+            {(journeyType !== "one-way") && <><input
               className="border border-black/20 rounded-lg px-4 h-12 focus:outline-none focus:ring-2 focus:ring-black"
               type="date"
               name="return_date"
-              required={embedded && journeyType === "return"}
+              required={journeyType === "return"}
               aria-label="Return date"
             />
             <input
@@ -177,7 +178,7 @@ export default function QuickQuote({ embedded = false, sourcePage = '' } = {}) {
               type="time"
               name="return_time"
               aria-label="Return time"
-              required={embedded && journeyType === "return"}
+              required={journeyType === "return"}
             /></>}
           </div>
 
@@ -198,7 +199,7 @@ export default function QuickQuote({ embedded = false, sourcePage = '' } = {}) {
             />
             <input
               className="border border-black/20 rounded-lg px-4 h-12 focus:outline-none focus:ring-2 focus:ring-black"
-              aria-label="Telephone number" name="phone"
+              type="tel" aria-label="Telephone number" name="phone"
               placeholder="Phone"
             />
           </div>
@@ -206,7 +207,7 @@ export default function QuickQuote({ embedded = false, sourcePage = '' } = {}) {
           <textarea
             className="border border-black/20 rounded-lg px-4 py-3 min-h-[110px] focus:outline-none focus:ring-2 focus:ring-black"
             aria-label="Additional journey requirements" name="message"
-            placeholder={embedded ? "Luggage quantities, accessibility, flight details or other requirements…" : "Passengers, luggage, accessibility, special notes…"}
+            placeholder="Luggage quantities, accessibility, flight details or other requirements…"
           />
 
           {/* honeypot + subject */}
@@ -237,6 +238,7 @@ export default function QuickQuote({ embedded = false, sourcePage = '' } = {}) {
         <div className="mt-6 rounded-xl border border-black/10 p-4 bg-black/5 text-black">
           <p className="font-medium">✅ Thanks — your enquiry has been sent.</p>
           <p className="mt-1">We’ll get back to you shortly. If it’s urgent, <a className="underline" href={`tel:${phone}`}>call us</a>.</p>
+          <a className="underline" href="/thank-you">View confirmation</a>
         </div>
       )}
     </section>

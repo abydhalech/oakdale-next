@@ -1,3 +1,4 @@
+import { QuoteLink, QuotePanel } from './QuotePanel';
 import Link from 'next/link';
 import Image from 'next/image';
 import Layout from './Layout';
@@ -99,12 +100,7 @@ export default function BoltonManchesterAirportPage() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              href="/contact"
-              className="bg-black text-white px-6 py-3 rounded font-semibold"
-            >
-              Get an Airport Quote
-            </Link>
+            <QuoteLink className="bg-black text-white px-6 py-3 rounded font-semibold">Get an Airport Quote</QuoteLink>
 
             <Link
               href="/services/airport-transfers-manchester,-liverpool,-leeds-bradford"
@@ -418,12 +414,7 @@ export default function BoltonManchesterAirportPage() {
           </p>
 
           <div className="mt-6">
-            <Link
-              href="/contact"
-              className="inline-block bg-black text-white px-7 py-3 rounded font-semibold"
-            >
-              Request an Airport Quote
-            </Link>
+            <QuotePanel sourcePage={canonical.slice(siteUrl.length)} />
           </div>
         </section>
 
